@@ -260,6 +260,7 @@
 .previewPicture .slick-slide:not(.slick-center) {
     transform: scale(0.9);
     opacity: .3;
+    pointer-events: none;
 }
 
 .previewPicture .slick-center>.imgA {
