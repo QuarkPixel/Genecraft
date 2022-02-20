@@ -112,6 +112,10 @@
     box-shadow: 0 0 25px 2px var(--black1);
 }
 
+#video {
+    margin-bottom: 64px;
+}
+
 #video p {
     margin: .1vw 4vw;
     font-size: larger;
