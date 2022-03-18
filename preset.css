@@ -341,10 +341,10 @@ footer {
     padding: 25px 0;
     background-color: #ececec;
     width: 100vw;
-    height: 400px;
+    overflow: auto;
 }
 
-#hrefList {
+.hrefList {
     margin-left: 5%;
     margin-right: 0;
     width: 8em;
@@ -352,7 +352,7 @@ footer {
     text-align: left;
 }
 
-#hrefListTitle {
+.hrefListTitle {
     color: var(--mainColor);
     text-shadow: 0 0 5px var(--mainColor3);
     display: block;
@@ -360,13 +360,13 @@ footer {
     margin-bottom: 15px;
 }
 
-#hrefList ul li {
+.hrefList ul li {
     display: flex;
     justify-items: left;
     align-items: center;
 }
 
-#hrefList ul li a {
+.hrefList ul li a {
     color: #626262;
     padding: 3px 10px;
     margin: 3px 0;
@@ -375,7 +375,7 @@ footer {
     text-shadow: 0 0 0 var(--mainColor0);
 }
 
-#hrefList ul li a:hover {
+.hrefList ul li a:hover {
     box-shadow: 0 0 8px var(--mainColor4);
     color: black;
 }
@@ -420,6 +420,11 @@ footer {
     margin-top: 5px;
 }
 
+#copyRight li i {
+    display: block;
+    font-size: 1pt;
+    margin-top: 6px;
+}
 
 /* 文字 */
 .txt {
@@ -593,7 +598,11 @@ footer {
     }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 639px) {
+    #hrefDiv {
+        overflow: auto;
+    }
+
     #info {
         float: left;
         margin-left: 5%;
@@ -606,7 +615,7 @@ footer {
 
     #copyRight {
         text-align: left;
-        margin-top: 18px;
+        margin-top: -10px;
         text-align: start;
     }
 
@@ -616,8 +625,11 @@ footer {
         border-left: solid 2px var(--mainColor);
     }
 
-    footer {
-        height: 340px;
+    .hrefList {
+        margin-bottom: 30px;
     }
 
+    .hrefListTitle {
+        margin-bottom: 5px;
+    }
 }
