@@ -5,7 +5,7 @@ var removeTimes = 0
 function creatImgBox() {
     codImgID = (Array(5).join(0) + (arrNumber - imgNumber)).slice(-5);
     codImg = window.btoa(codImgID);
-    $('.container').append('<div class="item show"><div class="picture R' + Math.round(Math.random() * (-4) + 5) + '"><a href="view/#' + codImg + '" target="_blank"><img class="loadingIcon L' + imgNumber + '" src="../resources/Loading.svg" alt="Loading..."><img src="' + imgHref[imgNumber].replace("&r;", abbreviations) + '" alt="Photo No.' + codImgID + '" class="clickImg"></a></div></div>');
+    $('.container').append('<div class="item show"><div class="picture R' + Math.round(Math.random() * (-4) + 5) + '"><a href="view/#' + codImg + '" target="_blank"><img src="' + imgHref[imgNumber].replace("&r;", abbreviations) + '" alt="Photo No.' + codImgID + '" class="clickImg"></a></div></div>');
     imgNumber++;
 };
 
@@ -69,8 +69,4 @@ function waterFall() {
             container.style.height = min + "px";
         };
     };
-    $(item).ready(function () {
-        $(document.getElementsByClassName('L' + removeTimes)).remove();
-        removeTimes++;
-    });
 };

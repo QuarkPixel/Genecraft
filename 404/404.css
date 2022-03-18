@@ -1,0 +1,28 @@
+body {
+    background-color: #2d90da;
+    font-family: calluna;
+}
+
+a {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90vw;
+    padding: 0 5vw;
+}
+
+.four-zero-four {
+    font-size: 12vw;
+}
+
+.message {
+    text-align: center;
+    font-size: 18pt;
+}
+
+.txtSmall {
+    opacity: .5;
+}

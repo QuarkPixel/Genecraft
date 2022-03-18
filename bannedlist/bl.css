@@ -15,8 +15,11 @@ table {
     margin: 100px auto 0 auto;
     width: 90%;
     height: 300%;
-    font-family: gravity;
     border-spacing: 7px 6px;
+}
+
+.playerID {
+    font-weight: bold;
 }
 
 th,
@@ -42,5 +45,5 @@ td {
 
 .end {
     font-size: larger;
-    font-family: gravityBold;
+    font-weight: bold;
 }

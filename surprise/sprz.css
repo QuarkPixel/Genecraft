@@ -1,0 +1,52 @@
+body {
+    background-color: #2d90da;
+    color: #fff;
+    font-family: calluna;
+}
+
+.backGroundUP {
+    position: absolute;
+    left: -10%;
+    top: 10%;
+    width: 40%;
+    opacity: .4;
+    pointer-events: none;
+}
+
+.backGroundDown {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60vw;
+    opacity: .4;
+    pointer-events: none;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90vw;
+    padding: 0 5vw;
+}
+
+.sprz {
+    font-size: 12vw;
+}
+
+.message {
+    text-align: center;
+    font-size: 18pt;
+}
+
+.message img {
+    height: 25pt;
+    vertical-align: sub;
+    margin: 0 3pt 1.5pt;
+}
+
+.txtSmall {
+    opacity: .5;
+}

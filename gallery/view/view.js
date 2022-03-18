@@ -83,7 +83,7 @@ if (arrNumber * .02 > poundSign && poundSign != 0) {
             window.sessionStorage.setItem('times', 1);
         }
     } else {
-        $('body').append('<div id="iqrs">彦祖&emsp;你来考古辣~</div>');
+        $('body').append('<a href="/surprise/index.html#7a1t2dxh4h0u" id="iqrs">彦祖&emsp;你来考古辣~</a>');
         $('#iqrs').css({
             "display": "inline",
             "position": "absolute",

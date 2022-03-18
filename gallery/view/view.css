@@ -65,7 +65,7 @@ header {
     margin-left: 20px;
     font-size: x-large;
     line-height: 34px;
-    font-family: gravityBold;
+    font-weight: bold;
     color: var(--black);
     transition: cubic-bezier(.5, 0, 0, 1) .4s;
 }

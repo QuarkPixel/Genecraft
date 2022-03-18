@@ -36,10 +36,10 @@ if (numberRows != 0) {
         var pageW = $(".bulletBox").width() + "px";
         var listOne = historyList[creatBullet_Times].split('$');
         var date = listOne[0].split('.');
-        if (Math.random()*10<.2) {
-            var newText = $('<a>真的有人会看这个嘛awa</a>');
-        }else{
-            var newText = $('<a href="history" ><i class="time"><i class="year">' + date[0] + '.</i><i class="month">' + date[1] + '</i>.' + date[2] + ' </i>&emsp;' + listOne[1] + ' ' + listOne[2] + "</a>");
+        if (Math.random() * 10 < .2) {
+            var newText = $('<a href="/surprise/index.html#hgg1mlsdlpiy">真的有人会看这个嘛 awa</a>');
+        } else {
+            var newText = $('<a href="history" ><i class="time fC"><i class="year">' + date[0] + '.</i><i class="month">' + date[1] + '</i>.' + date[2] + ' </i>&emsp;' + listOne[1] + ' ' + listOne[2] + "</a>");
         }
         newText.css({
             "left": pageW,

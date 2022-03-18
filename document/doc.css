@@ -280,7 +280,7 @@ aside ul li:hover {
 .instruction {
     font-size: 18pt;
     font-style: italic;
-    font-family: gravityBold;
+    font-weight: bold;
     display: block;
     margin-top: 20px;
     margin-left: -.5em;
