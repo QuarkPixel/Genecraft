@@ -4,6 +4,13 @@ body {
     font-family: calluna;
 }
 
+.main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative
+}
+
 .backGroundUP {
     position: absolute;
     left: -10%;
