@@ -1,4 +1,4 @@
-var link = 'svg/' + window.location.hash.replace("#", "") + '.svg';
+var link = '../resources/surpriseSvg/' + window.location.hash.replace("#", "") + '.svg';
 var xmlhttp = new XMLHttpRequest()
 xmlhttp.open('GET', link, false)
 xmlhttp.send()
