@@ -70,6 +70,16 @@ if (numberRows != 0) {
     $('.bulletBox').css('display', 'none')
 };
 
+//List
+for (i = 0; i < sponsorListII.length; i++) {
+    var listOne = sponsorListII[i].split('$');
+    $('.sLIndex').append('<tr><td class="playerID" lang="en">' + listOne[0] + '</td><td>￥' + listOne[1] + '</td></tr>');
+};
+for (i = 0; i < sponsorListI.length; i++) {
+    var listOne = sponsorListI[i].split('$');
+    $('.sLIndex').append('<tr><td class="playerID" lang="en">' + listOne[0] + '</td><td>￥' + listOne[1] + '</td></tr>');
+};
+
 //Create Framework
 var previewPicture = document.querySelector('.previewPicture');
 var previewParent = document.querySelector('.item');
@@ -121,6 +131,12 @@ $(document).ready(function () {
         centerMode: true,
         pauseOnHover: false,
     });
+
+    if (window.screen.availWidth >= 682) {
+        $(".firstPartRight").css("height", $('.firstPartLeft').innerHeight() + "px");
+    };
+    //<682
+    // $(".announcement").css("margin-top", ($('.firstPartLeft').innerHeight() - $('.sponsorList').innerHeight() - $('.announcement').innerHeight()) / 2 + 'px')
 });
 
 // var refreshWithDetectionWidth = $(window).width();

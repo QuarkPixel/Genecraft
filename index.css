@@ -5,6 +5,7 @@
 }
 
 .mTitle {
+    margin: 5px;
     font-size: x-large;
     font-weight: bold;
 }
@@ -165,6 +166,11 @@
     display: none;
 }
 
+.firstPart {
+    margin-bottom: 25px;
+    height: 100%;
+}
+
 .firstPartLeft {
     float: left;
     width: 58vw;
@@ -201,7 +207,7 @@
 
 .AD {
     width: 100%;
-    margin: 80px 0 25px;
+    margin-top: 80px;
     padding: 2vw 0;
 }
 
@@ -300,20 +306,94 @@
 
 .firstPartRight {
     float: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
     width: 30vw;
+    /* height: 30vw; */
+    /* height: 100%; */
+}
+
+@keyframes logoRotational {
+    0% {
+        transform: rotate(0);
+    }
+    20% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logoImg {
+    /* background: url(https://imgtu.ly2018.top/img/2022/03/220320_rcDYS2ct_Alpha.png)
+        no-repeat center; */
+    /* background-size: 100% 100%; */
+    position: absolute;
+    top: 0;
+    width: 30vw;
+    height: 30vw;
+    animation: logoRotational 10s ease-in-out 5s infinite backwards;
+    transform-origin: 50% 54%;
+    /* display: none; */
+}
+
+.logoMain {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.5; */
+}
+
+.logoShadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(14px) brightness(0);
+    opacity: 0.1;
+    transform: scale(1.01);
 }
 
 .announcement {
-    margin-bottom: 20px;
-    padding: 12px 5px;
+    margin-bottom: 2vw;
+    padding: 6px 0 12px;
+}
+
+.announcement > div {
+    background-color: #e5e5e5;
+    margin: 5px;
+    padding: 10px 3px;
+    border-radius: 5px;
 }
 
 .sponsorList {
-    /* height: 100px; */
-    background-color: #ececec;
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: calc(100% - 10px);
+    padding: 12px 5px 24px;
     border-radius: 12px;
     box-shadow: 0 0 25px 2px var(--black1);
-    padding: 12px 5px;
+    background-color: #ececec;
+}
+
+.sponsorList table {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+    background-color: #e5e5e5;
+}
+
+.playerID {
+    text-align: center;
+}
+
+.sLMoney {
+    text-align: left;
+    text-indent: 0.5em;
 }
 
 .bulletBox {
@@ -447,7 +527,7 @@
 @media (min-width: 958px) {
     .AD {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 2vw 0;
         align-items: center;
     }
@@ -464,7 +544,7 @@
         border-radius: 6px;
     }
 
-    .dividingLine {
+    .AD .dividingLine {
         display: block;
         width: 1px;
         height: calc(20pt + 33px + 13.5vw);
@@ -482,5 +562,73 @@
 
     .rule p {
         margin: 0;
+    }
+
+    .logoImg {
+        display: none;
+    }
+}
+
+@media (max-width: 872px) {
+    /* .firstPartRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .announcement {
+        margin-bottom: 2vw;
+    } */
+
+    .sponsorList {
+        /* position: unset; */
+    }
+}
+
+@media (max-width: 682px) {
+    .logoImg {
+        display: none;
+    }
+
+    .firstPartLeft {
+        float: none;
+        width: 90vw;
+    }
+
+    .video {
+        width: 80vw;
+        margin-top: 5vw;
+    }
+
+    .video > p {
+        margin-left: 4vw;
+        font-size: x-large;
+    }
+
+    .video iframe {
+        width: 72vw;
+        height: 40.5vw;
+        margin: 2vw 4vw 0;
+    }
+
+    .dotsDiv {
+        margin-left: 4vw;
+    }
+
+    .arrowsDiv {
+        margin-right: 4vw;
+    }
+
+    .firstPartRight {
+        float: none;
+        width: 90vw;
+        margin-top: 2vw;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .announcement {
+        margin: 0 1vw 0 0;
     }
 }
