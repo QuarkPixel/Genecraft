@@ -10,7 +10,7 @@ var sponsorListI = [
     "dream_station$180.00",
     "Dream boy$11.11",
     "55kaikaikai$8.89",
-    "jackmsq$300.00",
+    "Jackmsq$300.00",
     "Sun_miss$6.66",
     "SYQ$1.11",
     "zero_8_5$50.00",
