@@ -58,7 +58,7 @@ function throttle(callback) {
             setTimeout(() => {
                 callback.bind(this)()
                 flag = true
-            }, 640)
+            }, 500)
         }
     }
 }
