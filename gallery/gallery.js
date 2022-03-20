@@ -42,7 +42,7 @@ function throttle(callback) {
             setTimeout(() => {
                 callback.bind(this)();
                 flag = true;
-            }, 280);
+            }, 640);
         }
     }
 };

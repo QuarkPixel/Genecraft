@@ -37,9 +37,9 @@ if (numberRows != 0) {
         var listOne = historyList[creatBullet_Times].split('$');
         var date = listOne[0].split('.');
         if (Math.random() * 10 < .2) {
-            var newText = $('<a href="/surprise/index.html#hgg1mlsdlpiy">真的有人会看这个嘛 awa</a>');
+            var newText = $('<a href="/surprise/index.html#hgg1mlsdlpiy" target="_blank">真的有人会看这个嘛 awa</a>');
         } else {
-            var newText = $('<a href="history" ><i class="time fC"><i class="year">' + date[0] + '.</i><i class="month">' + date[1] + '</i>.' + date[2] + ' </i>&emsp;' + listOne[1] + ' ' + listOne[2] + "</a>");
+            var newText = $('<a href="history" ><i class="time"><i class="year">' + date[0] + '.</i><i class="month">' + date[1] + '</i>.' + date[2] + ' </i>&emsp;' + listOne[1] + ' ' + listOne[2] + "</a>");
         }
         newText.css({
             "left": pageW,
@@ -99,7 +99,7 @@ window.onload = function () {
 
 //Loadover
 $(document).ready(function () {
-    $('.video').slick({
+    $('.iframeVideo').slick({
         accessibility: false,
         appendArrows: $('.arrowsDiv'),
         prevArrow: '<svg class="flipArrow" width="25px" height="25px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="#1d1d1f" d="M388.266667 512l149.333333 149.333333 59.733333-59.733333-89.6-89.6L597.333333 422.4l-59.733333-59.733333L388.266667 512zM853.333333 512c0-187.733333-153.6-341.333333-341.333333-341.333333s-341.333333 153.6-341.333333 341.333333 153.6 341.333333 341.333333 341.333333 341.333333-153.6 341.333333-341.333333z m-85.333333 0c0 140.8-115.2 256-256 256s-256-115.2-256-256 115.2-256 256-256 256 115.2 256 256z"  /></svg>',
@@ -123,9 +123,9 @@ $(document).ready(function () {
     });
 });
 
-var refreshWithDetectionWidth = $(window).width();
-setInterval(function () {
-    if ($(window).width() != refreshWithDetectionWidth) {
-        location.reload();
-    };
-}, 5000);
+// var refreshWithDetectionWidth = $(window).width();
+// setInterval(function () {
+//     if ($(window).width() != refreshWithDetectionWidth) {
+//         location.reload();
+//     };
+// }, 5000);

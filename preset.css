@@ -5,27 +5,27 @@
 
 :root {
     --mainColor: rgba(39, 128, 194, 1);
-    --mainColor9: rgba(39, 128, 194, .9);
-    --mainColor8: rgba(39, 128, 194, .8);
-    --mainColor7: rgba(39, 128, 194, .7);
-    --mainColor6: rgba(39, 128, 194, .6);
-    --mainColor5: rgba(39, 128, 194, .5);
-    --mainColor4: rgba(39, 128, 194, .4);
-    --mainColor3: rgba(39, 128, 194, .3);
-    --mainColor2: rgba(39, 128, 194, .2);
-    --mainColor1: rgba(39, 128, 194, .1);
+    --mainColor9: rgba(39, 128, 194, 0.9);
+    --mainColor8: rgba(39, 128, 194, 0.8);
+    --mainColor7: rgba(39, 128, 194, 0.7);
+    --mainColor6: rgba(39, 128, 194, 0.6);
+    --mainColor5: rgba(39, 128, 194, 0.5);
+    --mainColor4: rgba(39, 128, 194, 0.4);
+    --mainColor3: rgba(39, 128, 194, 0.3);
+    --mainColor2: rgba(39, 128, 194, 0.2);
+    --mainColor1: rgba(39, 128, 194, 0.1);
     --mainColor0: rgba(39, 128, 194, 0);
     --black: #1d1d1f;
     --black10: rgba(0, 0, 0, 1);
-    --black9: rgba(0, 0, 0, .9);
-    --black8: rgba(0, 0, 0, .8);
-    --black7: rgba(0, 0, 0, .7);
-    --black6: rgba(0, 0, 0, .6);
-    --black5: rgba(0, 0, 0, .5);
-    --black4: rgba(0, 0, 0, .4);
-    --black3: rgba(0, 0, 0, .3);
-    --black2: rgba(0, 0, 0, .2);
-    --black1: rgba(0, 0, 0, .1);
+    --black9: rgba(0, 0, 0, 0.9);
+    --black8: rgba(0, 0, 0, 0.8);
+    --black7: rgba(0, 0, 0, 0.7);
+    --black6: rgba(0, 0, 0, 0.6);
+    --black5: rgba(0, 0, 0, 0.5);
+    --black4: rgba(0, 0, 0, 0.4);
+    --black3: rgba(0, 0, 0, 0.3);
+    --black2: rgba(0, 0, 0, 0.2);
+    --black1: rgba(0, 0, 0, 0.1);
     --black0: rgba(0, 0, 0, 0);
     --greyColor: #ccc;
 }
@@ -38,7 +38,8 @@
 body {
     color: var(--black);
     background-color: #ccc;
-    font-family: calluna, PingFang SC, Microsoft YaHei, '微软雅黑', Arial, Helvetica, sans-serif;
+    font-family: calluna, PingFang SC, Microsoft YaHei, "微软雅黑", Arial,
+        Helvetica, sans-serif;
 }
 
 * {
@@ -65,7 +66,6 @@ html {
     height: 100%;
 }
 
-
 i {
     font-style: normal;
 }
@@ -84,7 +84,7 @@ i {
 }
 
 header {
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(5vw);
     -webkit-backdrop-filter: blur(5vw);
     box-shadow: 0 -4px 8px 8px var(--black1);
@@ -139,7 +139,7 @@ header {
     line-height: 35px;
     font-size: 25px;
     transform: scale(1);
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .blueLine {
@@ -150,7 +150,7 @@ header {
     margin: auto;
     margin-top: -3px;
     box-shadow: 0 0 5px var(--mainColor3);
-    transition: cubic-bezier(.32, 0, .32, 1) .2s;
+    transition: cubic-bezier(0.32, 0, 0.32, 1) 0.2s;
 }
 
 .blueLineNone {
@@ -161,16 +161,16 @@ header {
     margin: auto;
     margin-top: -3px;
     box-shadow: 0 0 5px var(--mainColor3);
-    transition: cubic-bezier(.32, 0, .32, 1) .2s;
+    transition: cubic-bezier(0.32, 0, 0.32, 1) 0.2s;
 }
 
-#navLeft li:hover>.blueLineNone {
+#navLeft li:hover > .blueLineNone {
     background-color: var(--mainColor8);
     width: 80%;
 }
 
-#nav ul li:hover>a {
-    transform: scale(.9);
+#nav ul li:hover > a {
+    transform: scale(0.9);
 }
 
 #navMore {
@@ -189,11 +189,11 @@ header {
 #navButton a {
     pointer-events: none;
     transform: rotate(0) scale(1);
-    transition: cubic-bezier(.5, 0, 0, 1) .58s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.58s;
 }
 
-#navHref:checked~label a {
-    transform: rotate(-180deg) scale(.75);
+#navHref:checked ~ label a {
+    transform: rotate(-180deg) scale(0.75);
 }
 
 #navButton a div {
@@ -202,7 +202,7 @@ header {
     background-color: var(--black);
     margin: 5px 0;
     box-shadow: 0 0 5px var(--mainColor0);
-    transition: cubic-bezier(.5, 0, 0, 1) .4s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
 }
 
 #navButton a :nth-child(1) {
@@ -220,18 +220,18 @@ header {
     margin-left: 2px;
 }
 
-#navHref:checked~label a div {
+#navHref:checked ~ label a div {
     background-color: var(--mainColor);
     box-shadow: 0 0 5px var(--mainColor3);
 }
 
-#navHref:checked~label a :nth-child(1) {
+#navHref:checked ~ label a :nth-child(1) {
     width: 30px;
-    transform: translateY(11px) rotate(.125turn) scale(1.2);
+    transform: translateY(11px) rotate(0.125turn) scale(1.2);
     margin-left: 0;
 }
 
-#navHref:checked~label a :nth-child(2) {
+#navHref:checked ~ label a :nth-child(2) {
     width: 0;
     margin-left: 15px;
     background-color: var(--mainColor0);
@@ -239,9 +239,9 @@ header {
     margin-left: 0;
 }
 
-#navHref:checked~label a :nth-child(3) {
+#navHref:checked ~ label a :nth-child(3) {
     width: 30px;
-    transform: translateY(-11px) rotate(-.125turn) scale(1.2);
+    transform: translateY(-11px) rotate(-0.125turn) scale(1.2);
     margin-left: 0;
 }
 
@@ -252,11 +252,11 @@ header {
     border-radius: 64px;
     box-shadow: 0 0 15px var(--black0);
     transform: scale(0);
-    transition: cubic-bezier(.32, 0, .19, 1) 0.4s;
+    transition: cubic-bezier(0.32, 0, 0.19, 1) 0.4s;
     transform-origin: 90% -5% 0;
 }
 
-#navHref:checked~div {
+#navHref:checked ~ div {
     display: block;
     border-radius: 8px;
     background-color: rgba(245, 245, 247, 1);
@@ -271,14 +271,14 @@ header {
     border-radius: 32px;
     background-color: rgba(222, 222, 222, 0);
     pointer-events: none;
-    transition: cubic-bezier(.32, 0, .19, 1) 0.4s;
+    transition: cubic-bezier(0.32, 0, 0.19, 1) 0.4s;
 }
 
 #navMoreHref li:hover {
     background-color: rgba(222, 222, 222, 1);
 }
 
-#navHref:checked~div ul li {
+#navHref:checked ~ div ul li {
     border-radius: 5px;
     pointer-events: all;
 }
@@ -289,11 +289,11 @@ header {
     font-size: larger;
     text-align: center;
     color: var(--black0);
-    transition: cubic-bezier(.32, 0, .19, 1) 0.2s;
+    transition: cubic-bezier(0.32, 0, 0.19, 1) 0.2s;
     pointer-events: none;
 }
 
-#navHref:checked~div ul li a {
+#navHref:checked ~ div ul li a {
     color: var(--black);
     pointer-events: all;
 }
@@ -400,7 +400,7 @@ footer {
     display: inline-block;
     list-style: none;
     margin-top: 10px;
-    padding: .5em;
+    padding: 0.5em;
 }
 
 #copyRight li a {
@@ -432,7 +432,6 @@ footer {
 
 .txtBold {
     font-weight: bold;
-    /* text-shadow: 1.8px 1.8px 0 #b2b3b3; */
     border-bottom: 1px dashed;
 }
 
@@ -450,10 +449,6 @@ footer {
     display: inline;
 }
 
-.fC {
-    font-family: calluna !important;
-}
-
 .note {
     color: var(--black5);
     font-size: x-small;
@@ -461,16 +456,16 @@ footer {
 
 @keyframes loadRotate {
     0% {
-        transform: rotate(-45deg)translate(-50%, -50%);
+        transform: rotate(-45deg) translate(-50%, -50%);
     }
 
     100% {
-        transform: rotate(315deg)translate(-50%, -50%);
+        transform: rotate(315deg) translate(-50%, -50%);
     }
 }
 
 .loadingIcon {
-    animation: loadRotate 3s cubic-bezier(.8, .4, .2, .6) infinite;
+    animation: loadRotate 3s cubic-bezier(0.8, 0.4, 0.2, 0.6) infinite;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -503,7 +498,7 @@ footer {
 
 @media (max-width: 440px) {
     #navLeft li .sizeSmall {
-        transform: scale(.7);
+        transform: scale(0.7);
         transform-origin: center bottom;
         padding: 0 0;
         margin: 0 -2px;
@@ -527,7 +522,6 @@ footer {
 }
 
 @media (max-width: 200px) {
-
     #logo,
     #cover div:last-child {
         display: none;
@@ -558,7 +552,7 @@ footer {
         box-shadow: 0 0 5px var(--black3);
     }
 
-    #navHref:checked~label a div {
+    #navHref:checked ~ label a div {
         box-shadow: 0 0 5px 2px var(--mainColor3);
     }
 }
@@ -572,7 +566,6 @@ footer {
 }
 
 @media (max-width: 119px) {
-
     #navButton,
     #navMoreHref {
         display: none;
