@@ -55,6 +55,18 @@ body {
     margin: 0 3pt 1.5pt;
 }
 
+#time {
+    font-size: 10vw;
+    margin-bottom: -50pt;
+    opacity: 0.6;
+}
+
 .txtSmall {
     opacity: 0.5;
+}
+
+@media (min-width: 450px) {
+    #time {
+        font-size: 30pt;
+    }
 }

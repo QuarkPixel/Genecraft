@@ -13,3 +13,24 @@ if (xmlhttp.status == 200) {
 } else {
     window.location.href = "../404"
 }
+
+function time() {
+    // var vWeek, vDay
+    var date = new Date()
+    document.getElementById("time").innerHTML =
+        date.getFullYear().toString() +
+        "." +
+        PrefixZero((date.getMonth() + 1).toString(), 2) +
+        "." +
+        PrefixZero(date.getDate().toString(), 2) +
+        " " +
+        PrefixZero(date.getHours().toString(), 2) +
+        ":" +
+        PrefixZero(date.getMinutes().toString(), 2) +
+        ":" +
+        PrefixZero(date.getSeconds().toString(), 2)
+}
+function PrefixZero(num, n) {
+    return (Array(n).join(0) + num).slice(-n)
+}
+setInterval("time()", 1000)
