@@ -15,7 +15,6 @@ if (xmlhttp.status == 200) {
 }
 
 function time() {
-    // var vWeek, vDay
     var date = new Date()
     document.getElementById("time").innerHTML =
         date.getFullYear().toString() +
