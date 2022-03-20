@@ -6,7 +6,7 @@
     display: none;
 }
 
-#bLIndex>tr>td,
+#bLIndex > tr > td,
 th {
     padding: 5px 3px;
 }

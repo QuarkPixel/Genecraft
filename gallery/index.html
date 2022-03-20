@@ -1,140 +1,210 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
+        />
+        <title>方块世界-图库</title>
+        <link
+            rel="shortcut icon"
+            href="https://imgtu.ly2018.top/img/2022/01/220126_5an6GFjJ_211226_KTe8eKBH.png"
+        />
+        <link rel="stylesheet" href="../preset.css" />
+        <link rel="stylesheet" href="gallery.css" />
+        <link
+            rel="apple-touch-icon"
+            href="https://imgtu.ly2018.top/img/2022/01/220126_5an6GFjJ_211226_KTe8eKBH.png"
+        />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-	<title>方块世界-图库</title>
-	<link rel="shortcut icon" href="https://imgtu.ly2018.top/img/2022/01/220126_5an6GFjJ_211226_KTe8eKBH.png">
-	<link rel="stylesheet" href="../preset.css">
-	<link rel="stylesheet" href="gallery.css">
-	<link rel="apple-touch-icon" href="https://imgtu.ly2018.top/img/2022/01/220126_5an6GFjJ_211226_KTe8eKBH.png">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
+    <body>
+        <header class="unCopy">
+            <div class="w">
+                <div id="logo">
+                    <a href="..">
+                        <img src="../resources/GenecraftLogo.svg" />
+                    </a>
+                    <a href="..">
+                        <img src="../resources/GenecraftTitle.svg" />
+                    </a>
+                </div>
+                <div id="nav">
+                    <ul id="navLeft">
+                        <li>
+                            <a href=".." class="sizeSmall">首页</a>
+                            <div class="blueLineNone"></div>
+                        </li>
+                        <li>
+                            <a href="#">图册</a>
+                            <div class="blueLine"></div>
+                        </li>
+                        <li>
+                            <a href="../document" class="sizeSmall">文档</a>
+                            <div class="blueLineNone"></div>
+                        </li>
+                    </ul>
+                    <ul id="navRight">
+                        <li>
+                            <a
+                                href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ"
+                                target="_blank"
+                                >加入我们</a
+                            >
+                            <div class="blueLine"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="navMore">
+                    <input type="checkbox" id="navHref" style="display: none" />
+                    <label for="navHref" id="navButton">
+                        <a href="#">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </a>
+                    </label>
+                    <div id="navMoreHref">
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ"
+                                    target="_blank"
+                                >
+                                    加入我们</a
+                                >
+                            </li>
+                            <li class="navMoreNone">
+                                <a href="..">首&emsp;页</a>
+                            </li>
+                            <li class="navMoreNone">
+                                <a href="../document">文&emsp;档</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main">
+            <div id="con" class="container unCopy"></div>
+            <div id="outerdiv" class="unCopy">
+                <div id="innerdiv"></div>
+            </div>
+            <div class="over">
+                <div class="unCopy">
+                    <img
+                        class="loadingIcon"
+                        src="../resources/Loading.svg"
+                        alt="Loading..."
+                    />
+                </div>
+                <p>没有图片了(*&gt;﹏&lt;*)</p>
+            </div>
+        </div>
+        <footer>
+            <div id="mountain"></div>
+            <div id="divider"></div>
+            <div id="content">
+                <div id="hrefDiv">
+                    <div class="hrefList">
+                        <span class="hrefListTitle" class="txt">所有链接</span>
+                        <ul>
+                            <li><a href=".." target="_blank">首页</a></li>
+                            <li>
+                                <a href="../gallery" target="_blank">图册</a>
+                            </li>
+                            <li>
+                                <a href="../document" target="_blank">文档</a>
+                            </li>
+                            <li>
+                                <a href="../history" target="_blank">历史</a>
+                            </li>
+                            <li>
+                                <a href="../bannedlist" target="_blank"
+                                    >封神榜</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ"
+                                    target="_blank"
+                                    >加入官方QQ群</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hrefList">
+                        <span class="hrefListTitle" class="txt">友情链接</span>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://www.minecraft.net/"
+                                    target="_blank"
+                                    >我的世界官网</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.xlhost.cn/"
+                                    target="_blank"
+                                    title="你最值得信任的云上主机商"
+                                    >糖糕云</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://www.mxxz.top/" target="_blank"
+                                    >梦想小站</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://space.bilibili.com/377074719"
+                                    target="_blank"
+                                    title="本网站作者的Bilibili"
+                                    >QuarkPixel</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="info">
+                    <div>
+                        <a href="index.html">
+                            <img
+                                src="https://imgtu.ly2018.top/img/2022/01/220126_TcsjJPP0_211127_aS7teVUC5.png"
+                            />
+                        </a>
+                    </div>
+                    <div>
+                        <a
+                            href="https://space.bilibili.com/377074719"
+                            target="_blank"
+                        >
+                            <img
+                                src="https://imgtu.ly2018.top/img/2021/11/211127_WQ0VDRzG.png"
+                            />
+                        </a>
+                    </div>
+                    <ul id="copyRight">
+                        <li>
+                            &copy; Genesis Craft&nbsp;
+                            <a href="https://beian.miit.gov.cn" target="_blank"
+                                >浙ICP备18045561号-3</a
+                            ><i
+                                >本站版权保留所有权利<br />未经许可禁止复制使用</i
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </footer>
 
-<body>
-	<header class="unCopy">
-		<div class="w">
-			<div id="logo">
-				<a href="..">
-					<img src="../resources/GenecraftLogo.svg">
-
-				</a>
-				<a href="..">
-					<img src="../resources/GenecraftTitle.svg">
-				</a>
-			</div>
-			<div id="nav">
-				<ul id="navLeft">
-					<li>
-						<a href=".." class="sizeSmall">首页</a>
-						<div class="blueLineNone"></div>
-					</li>
-					<li>
-						<a href="#">图册</a>
-						<div class="blueLine"></div>
-					</li>
-					<li>
-						<a href="../document" class="sizeSmall">文档</a>
-						<div class="blueLineNone"></div>
-					</li>
-				</ul>
-				<ul id="navRight">
-					<li>
-						<a href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ" target="_blank">加入我们</a>
-						<div class="blueLine"></div>
-					</li>
-				</ul>
-			</div>
-			<div id="navMore">
-				<input type="checkbox" id="navHref" style="display: none;">
-				<label for="navHref" id="navButton">
-					<a href="#">
-						<div></div>
-						<div></div>
-						<div></div>
-					</a>
-				</label>
-				<div id="navMoreHref">
-					<ul>
-						<li>
-							<a href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ" target="_blank">
-								加入我们</a>
-						</li>
-						<li class="navMoreNone">
-							<a href="..">首&emsp;页</a>
-						</li>
-						<li class="navMoreNone">
-							<a href="../document">文&emsp;档</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="main">
-		<div id="con" class="container unCopy"></div>
-		<div id="outerdiv" class="unCopy">
-			<div id="innerdiv">
-			</div>
-		</div>
-		<div class="over">
-			<div class="unCopy"><img class="loadingIcon" src="../resources/Loading.svg" alt="Loading..."></div>
-			<p>没有图片了(*&gt;﹏&lt;*)</p>
-		</div>
-	</div>
-	<footer>
-		<div id="mountain"></div>
-		<div id="divider"></div>
-		<div id="content">
-			<div id="hrefDiv">
-				<div class="hrefList">
-					<span class="hrefListTitle" class="txt">所有链接</span>
-					<ul>
-						<li><a href=".." target="_blank">首页</a></li>
-						<li><a href="../gallery" target="_blank">图册</a></li>
-						<li><a href="../document" target="_blank">文档</a></li>
-						<li><a href="../history" target="_blank">历史</a></li>
-						<li><a href="../bannedlist" target="_blank">封神榜</a></li>
-						<li><a href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ" target="_blank">加入官方QQ群</a></li>
-					</ul>
-				</div>
-				<div class="hrefList">
-					<span class="hrefListTitle" class="txt">友情链接</span>
-					<ul>
-						<li><a href="https://www.minecraft.net/" target="_blank">我的世界官网</a></li>
-						<li><a href="https://www.xlhost.cn/" target="_blank" title="你最值得信任的云上主机商">糖糕云</a></li>
-						<li><a href="https://www.mxxz.top/" target="_blank">梦想小站</a></li>
-						<li><a href="https://space.bilibili.com/377074719" target="_blank"
-								title="本网站作者的Bilibili">QuarkPixel</a></li>
-					</ul>
-				</div>
-			</div>
-			<div id="info">
-				<div>
-					<a href="index.html">
-						<img src="https://imgtu.ly2018.top/img/2022/01/220126_TcsjJPP0_211127_aS7teVUC5.png">
-					</a>
-				</div>
-				<div>
-					<a href="https://space.bilibili.com/377074719" target="_blank">
-						<img src="https://imgtu.ly2018.top/img/2021/11/211127_WQ0VDRzG.png">
-					</a>
-				</div>
-				<ul id="copyRight">
-					<li>&copy; Genesis Craft&nbsp; <a href="https://beian.miit.gov.cn"
-							target="_blank">浙ICP备18045561号-3</a><i>本站版权保留所有权利<br>未经许可禁止复制使用</i>
-					</li>
-				</ul>
-			</div>
-			<div style="clear: both;"></div>
-		</div>
-	</footer>
-
-	<script src="../data/galleryHref.js"></script>
-	<script src="gallery.js"></script>
-</body>
-
+        <script src="../data/galleryHref.js"></script>
+        <script src="gallery.js"></script>
+    </body>
 </html>

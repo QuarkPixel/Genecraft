@@ -1,5 +1,5 @@
 body {
-    transition: ease-in-out .3s;
+    transition: ease-in-out 0.3s;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
 .back {
     transform: unset !important;
     padding: 10px !important;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: absolute;
@@ -27,13 +27,13 @@ header {
     z-index: 46;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--black1);
-    transition: cubic-bezier(.5, 0, 0, 1) .4s !important;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s !important;
     cursor: pointer;
 }
 
 .back:hover {
     transform: unset !important;
-    box-shadow: 0 0 18px rgba(39, 128, 194, .3);
+    box-shadow: 0 0 18px rgba(39, 128, 194, 0.3);
 }
 
 .back div {
@@ -42,7 +42,7 @@ header {
     border-radius: 3px;
     box-shadow: 0 0 5px var(--mainColor0);
     background-color: var(--black);
-    transition: cubic-bezier(.5, 0, 0, 1) .4s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
     transform-origin: 20px 3px;
 }
 
@@ -67,7 +67,7 @@ header {
     line-height: 34px;
     font-weight: bold;
     color: var(--black);
-    transition: cubic-bezier(.5, 0, 0, 1) .4s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
 }
 
 .back:hover i {
@@ -87,7 +87,7 @@ header {
     z-index: 5;
 }
 
-.display>div:not(#loading) {
+.display > div:not(#loading) {
     display: none;
 }
 
@@ -101,7 +101,7 @@ header {
 
 #loading img {
     width: 10vw;
-    opacity: .8;
+    opacity: 0.8;
 }
 
 @keyframes start {
@@ -115,7 +115,7 @@ header {
 }
 
 .picture {
-    transition: cubic-bezier(.5, 0, 0, 1) .4s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
 }
 
 .picture img {
@@ -141,8 +141,8 @@ header {
 
 #displayImage {
     z-index: 10;
-    transition: cubic-bezier(.5, 0, 0, 1) .4s,
-        border-radius cubic-bezier(.5, 0, 0, 1) .7s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s,
+        border-radius cubic-bezier(0.5, 0, 0, 1) 0.7s;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -161,10 +161,10 @@ header {
 }
 
 #displayShadow {
-    filter: blur(5vw) brightness(.9);
+    filter: blur(5vw) brightness(0.9);
     opacity: 1;
     z-index: 9;
-    transition: cubic-bezier(.5, 0, 0, 1) .4s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
 }
 
 .selected {
@@ -190,16 +190,16 @@ header {
     height: 60vh;
 }
 
-#error p>:nth-child(1) {
+#error p > :nth-child(1) {
     font-size: 12em;
     color: var(--mainColor);
 }
 
-#error p>:nth-child(2) {
+#error p > :nth-child(2) {
     font-size: x-large;
 }
 
-#error p>:nth-child(3) {
+#error p > :nth-child(3) {
     margin-top: 20px;
 }
 

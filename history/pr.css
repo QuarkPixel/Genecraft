@@ -19,7 +19,7 @@
 }
 
 .wrap::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 80px;
     left: 14%;
@@ -46,7 +46,7 @@
     align-items: center;
 }
 
-.time>span {
+.time > span {
     width: auto;
     border-radius: 10px;
     text-align: center;
@@ -85,12 +85,12 @@
 }
 
 .event:nth-child(even) .left {
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 10px var(--black3);
 }
 
 .event:nth-child(odd) .right {
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 10px var(--black3);
 }
 
@@ -123,7 +123,7 @@
 
 .order label {
     cursor: pointer;
-    background-color: rgba(245, 245, 247, .8);
+    background-color: rgba(245, 245, 247, 0.8);
     border-radius: 15px;
     box-shadow: 0 0 10px var(--black1);
     height: 58px;
@@ -133,7 +133,7 @@
 
 .order label svg g {
     transform: rotate(-180deg);
-    transition: cubic-bezier(.5, 0, 0, 1) 1s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 1s;
     transform-origin: 206px 72px;
 }
 
@@ -142,10 +142,10 @@
 }
 
 .playAnimation {
-    animation: switch .7s ease-in-out;
+    animation: switch 0.7s ease-in-out;
 }
 
-#orderButton:checked~#nav ul .order label svg g {
+#orderButton:checked ~ #nav ul .order label svg g {
     transform: rotate(0);
 }
 
@@ -155,11 +155,11 @@
     line-height: 20px;
     font-size: larger;
     text-align: center;
-    transition: cubic-bezier(.32, 0, .19, 1) 0.2s;
+    transition: cubic-bezier(0.32, 0, 0.19, 1) 0.2s;
     cursor: pointer;
 }
 
-#orderButton:checked~#navMore #navMoreHref ul .labelNavMoreHrefButton label {
+#orderButton:checked ~ #navMore #navMoreHref ul .labelNavMoreHrefButton label {
     color: #2780c2;
     text-shadow: 0 0 5px var(--mainColor3);
 }
@@ -174,7 +174,7 @@
     }
 
     62.5% {
-        transform: scale(.95);
+        transform: scale(0.95);
     }
 
     100% {
@@ -183,7 +183,7 @@
 }
 
 @media (max-width: 538px) {
-    .time>span {
+    .time > span {
         font-size: x-small;
     }
 

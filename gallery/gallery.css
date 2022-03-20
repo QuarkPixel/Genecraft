@@ -1,7 +1,7 @@
 .container {
     margin: 100px auto 256px auto;
     position: relative;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .item {
@@ -9,7 +9,7 @@
     height: auto;
     padding: 10px;
     position: absolute;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     perspective: 500px;
     animation: scale 1s forwards;
     transform-origin: -140% 30%;
@@ -23,7 +23,7 @@
     cursor: pointer;
     transition: 0.4s;
     transform: scale(1);
-    background-color: rgba(204, 204, 204, .5);
+    background-color: rgba(204, 204, 204, 0.5);
 }
 
 .picture:hover {
@@ -37,7 +37,7 @@
 }
 
 .R2:hover {
-    transform: scale(1.05) rotate(-.5deg);
+    transform: scale(1.05) rotate(-0.5deg);
 }
 
 .R3:hover {
@@ -49,7 +49,7 @@
 }
 
 .R5:hover {
-    transform: scale(1.05) rotate(.5deg);
+    transform: scale(1.05) rotate(0.5deg);
 }
 
 .item .picture a {
@@ -58,7 +58,7 @@
 
 .item .picture .loadingIcon {
     height: 50%;
-    opacity: .8;
+    opacity: 0.8;
     z-index: -1;
 }
 
@@ -119,7 +119,7 @@
 
 .over div img {
     height: 15vw;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .over p {

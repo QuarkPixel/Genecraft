@@ -135,13 +135,11 @@ $(document).ready(function () {
     if (window.screen.availWidth >= 682) {
         $(".firstPartRight").css("height", $('.firstPartLeft').innerHeight() + "px");
     };
-    //<682
-    // $(".announcement").css("margin-top", ($('.firstPartLeft').innerHeight() - $('.sponsorList').innerHeight() - $('.announcement').innerHeight()) / 2 + 'px')
 });
 
-// var refreshWithDetectionWidth = $(window).width();
-// setInterval(function () {
-//     if ($(window).width() != refreshWithDetectionWidth) {
-//         location.reload();
-//     };
-// }, 5000);
+var refreshWithDetectionWidth = $(window).width();
+setInterval(function () {
+    if ($(window).width() != refreshWithDetectionWidth) {
+        location.reload();
+    };
+}, 5000);

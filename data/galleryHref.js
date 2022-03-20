@@ -1,5 +1,5 @@
 //食用方法见主文件夹内的 README.md
-var abbreviations = "https://imgtu.ly2018.top/img/";
+var abbreviations = "https://imgtu.ly2018.top/img/"
 var imgHref = [
     "&r;2022/02/220211_2TCEy9Ex_1.png",
     "&r;2022/02/220211_9Zgddyha_2.png",

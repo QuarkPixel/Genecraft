@@ -3,20 +3,20 @@ aside {
     top: 120px;
     left: 0;
     width: 150px;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5vw);
     -webkit-backdrop-filter: blur(5vw);
     border-radius: 0 15px 15px 0;
     box-shadow: 1px 2px 10px 0 var(--black2);
     padding: 15px 0;
-    transition: cubic-bezier(.5, 0, 0, 1) .4s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
     z-index: 19;
 }
 
 .hidden {
     left: -110px;
     box-shadow: 1px 2px 10px -8px var(--black2);
-    transform: scale(.95);
+    transform: scale(0.95);
 }
 
 #categoryHref:checked {
@@ -42,10 +42,10 @@ aside label {
 aside label a {
     pointer-events: none;
     transform: rotate(180deg);
-    transition: cubic-bezier(.5, 0, 0, 1) .58s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.58s;
 }
 
-#categoryHref:checked~label a {
+#categoryHref:checked ~ label a {
     transform: rotate(0deg);
 }
 
@@ -55,10 +55,10 @@ aside label a div {
     border-radius: 3px;
     box-shadow: 0 0 5px var(--mainColor0);
     background-color: var(--black);
-    transition: cubic-bezier(.5, 0, 0, 1) .4s;
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
 }
 
-#categoryHref:checked~label a div {
+#categoryHref:checked ~ label a div {
     background-color: var(--mainColor);
     box-shadow: 0 0 5px var(--mainColor3);
 }
@@ -73,11 +73,11 @@ aside label a div:nth-child(2) {
     transform-origin: 20px 3px;
 }
 
-#categoryHref:checked~label a :nth-child(1) {
+#categoryHref:checked ~ label a :nth-child(1) {
     transform: translateY(5px) rotate(45deg);
 }
 
-#categoryHref:checked~label a :nth-child(2) {
+#categoryHref:checked ~ label a :nth-child(2) {
     transform: translateY(-5px) rotate(-45deg);
 }
 
@@ -89,7 +89,7 @@ aside ul li {
     padding: 10px 16px 10px 10px;
     text-align: center;
     cursor: pointer;
-    transition: cubic-bezier(.32, 0, .32, 1) .2s;
+    transition: cubic-bezier(0.32, 0, 0.32, 1) 0.2s;
 }
 
 aside ul li:hover {
@@ -119,9 +119,9 @@ aside ul li:hover {
     padding: 20px 0;
     box-shadow: 6px 10px 16px -10px var(--black1);
     border-radius: 5px;
-    transform: scale(.9);
+    transform: scale(0.9);
     transform-origin: top;
-    transition: cubic-bezier(.5, 0, .22, 1) .4s 50ms;
+    transition: cubic-bezier(0.5, 0, 0.22, 1) 0.4s 50ms;
 }
 
 .center {
@@ -133,26 +133,32 @@ aside ul li:hover {
 .item {
     margin: 0 20px;
     display: none;
-    background:
-        linear-gradient(to top, var(--mainColor), var(--mainColor)) left top no-repeat,
-        linear-gradient(to right, var(--mainColor), var(--mainColor)) left top no-repeat,
-        linear-gradient(to left, var(--mainColor), var(--mainColor)) right top no-repeat,
-        linear-gradient(to bottom, var(--mainColor), var(--mainColor)) right top no-repeat,
-        linear-gradient(to left, var(--mainColor), var(--mainColor)) left bottom no-repeat,
-        linear-gradient(to bottom, var(--mainColor), var(--mainColor)) left bottom no-repeat,
-        linear-gradient(to top, var(--mainColor), var(--mainColor)) right bottom no-repeat,
-        linear-gradient(to left, var(--mainColor), var(--mainColor)) right bottom no-repeat;
-    ;
+    background: linear-gradient(to top, var(--mainColor), var(--mainColor)) left
+            top no-repeat,
+        linear-gradient(to right, var(--mainColor), var(--mainColor)) left top
+            no-repeat,
+        linear-gradient(to left, var(--mainColor), var(--mainColor)) right top
+            no-repeat,
+        linear-gradient(to bottom, var(--mainColor), var(--mainColor)) right top
+            no-repeat,
+        linear-gradient(to left, var(--mainColor), var(--mainColor)) left bottom
+            no-repeat,
+        linear-gradient(to bottom, var(--mainColor), var(--mainColor)) left
+            bottom no-repeat,
+        linear-gradient(to top, var(--mainColor), var(--mainColor)) right bottom
+            no-repeat,
+        linear-gradient(to left, var(--mainColor), var(--mainColor)) right
+            bottom no-repeat;
     background-size: 2px 16px, 16px 2px, 2px 16px, 16px 2px;
 }
 
 .item::after {
-    content: '';
+    content: "";
     position: relative;
     display: block;
     width: 32px;
     height: 32px;
-    background: url('../resources/GenecraftLogo.svg');
+    background: url("../resources/GenecraftLogo.svg");
     filter: grayscale(80%);
     background-size: cover;
     float: right;
@@ -208,7 +214,7 @@ aside ul li:hover {
 }
 
 .jflc {
-    padding: 0 30px
+    padding: 0 30px;
 }
 
 .jflc p {
@@ -283,7 +289,7 @@ aside ul li:hover {
     font-weight: bold;
     display: block;
     margin-top: 20px;
-    margin-left: -.5em;
+    margin-left: -0.5em;
 }
 
 @media (max-width: 566px) {
