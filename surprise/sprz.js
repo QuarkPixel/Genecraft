@@ -19,17 +19,17 @@ function time() {
     document.getElementById("time").innerHTML =
         date.getFullYear().toString() +
         "." +
-        PrefixZero((date.getMonth() + 1).toString(), 2) +
+        PrefixZero((date.getMonth() + 1).toString()) +
         "." +
-        PrefixZero(date.getDate().toString(), 2) +
+        PrefixZero(date.getDate().toString()) +
         " " +
-        PrefixZero(date.getHours().toString(), 2) +
+        PrefixZero(date.getHours().toString()) +
         ":" +
-        PrefixZero(date.getMinutes().toString(), 2) +
+        PrefixZero(date.getMinutes().toString()) +
         ":" +
-        PrefixZero(date.getSeconds().toString(), 2)
+        PrefixZero(date.getSeconds().toString())
 }
-function PrefixZero(num, n) {
-    return (Array(n).join(0) + num).slice(-n)
+function PrefixZero(num) {
+    return (Array(2).join(0) + num).slice(-2)
 }
 setInterval("time()", 1000)
