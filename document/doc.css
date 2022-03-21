@@ -274,7 +274,7 @@ aside ul li:hover {
     font-weight: 520;
 }
 
-.information div {
+.information > div {
     margin-left: 25px;
     font-size: large;
 }
