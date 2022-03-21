@@ -15,45 +15,9 @@
     transform-origin: -140% 30%;
 }
 
-.picture {
-    box-shadow: 0 0 10px var(--black2);
-    padding: 3px;
-    border-radius: 9px;
-    font-size: 0;
-    cursor: pointer;
-    transition: 0.4s;
-    transform: scale(1);
-    background-color: rgba(204, 204, 204, 0.5);
-}
-
-.picture:hover {
-    box-shadow: 10px 8px 20px var(--black3);
-    z-index: 255;
-    transform: scale(1.05) rotateX(4deg) rotateY(0deg) rotateZ(0deg);
-}
-
-.R1:hover {
-    transform: scale(1.05) rotate(0deg);
-}
-
-.R2:hover {
-    transform: scale(1.05) rotate(-0.5deg);
-}
-
-.R3:hover {
-    transform: scale(1.05) rotate(-1deg);
-}
-
-.R4:hover {
-    transform: scale(1.05) rotate(1deg);
-}
-
-.R5:hover {
-    transform: scale(1.05) rotate(0.5deg);
-}
-
 .item .picture a {
     border-radius: 7px;
+    font-size: 0;
 }
 
 .item .picture .loadingIcon {
@@ -65,11 +29,12 @@
 .item .picture img {
     width: 100%;
     border-radius: 7px;
-    transition: 0.4s;
+    transition: 0.4s 0.1s;
 }
 
 .picture:hover img {
-    transform: scale(1.04);
+    transform: scale(1.05) rotate(var(--j));
+    box-shadow: 0 0 25px var(--black2);
 }
 
 @keyframes scale {
