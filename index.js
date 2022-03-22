@@ -171,7 +171,7 @@ $(document).ready(function () {
         pauseOnHover: false,
     })
 
-    if (window.screen.availWidth >= 682) {
+    if (document.body.offsetWidth >= 682) {
         $(".firstPartRight").css(
             "height",
             $(".firstPartLeft").innerHeight() + "px"
