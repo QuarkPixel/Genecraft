@@ -11,7 +11,7 @@ if (xmlhttp.status == 200) {
     $(".backGroundUP").append(link)
     $(".backGroundDown").append(link)
 } else {
-    window.location.href = "../404"
+    window.location.href = "../404.html"
 }
 
 function time() {
