@@ -6,7 +6,7 @@
 
 .mTitle {
     margin: 5px;
-    font-size: x-large;
+    font-size: larger;
     font-weight: bold;
 }
 
@@ -330,7 +330,8 @@
     top: 0;
     width: 30vw;
     height: 30vw;
-    animation: logoRotational 10s ease-in-out 5s infinite backwards;
+    animation: logoRotational 10s cubic-bezier(0.5, 0, 0, 1) 5s infinite
+        backwards;
     transform-origin: 50% 54%;
 }
 
@@ -430,7 +431,7 @@
     font-size: x-large;
     line-height: 32px;
     white-space: nowrap;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ececec;
     padding: 8px 10px;
     border-radius: 10px;
     font-weight: 700;
