@@ -351,6 +351,7 @@ footer {
     display: flex;
     justify-items: left;
     align-items: center;
+    perspective: 500px;
 }
 
 .hrefList ul li a {
@@ -365,6 +366,7 @@ footer {
 .hrefList ul li a:hover {
     box-shadow: 0 0 8px var(--mainColor4);
     color: black;
+    transform: translateZ(10px) rotateX(16deg);
 }
 
 #info {
