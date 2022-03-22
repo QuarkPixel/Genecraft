@@ -377,6 +377,22 @@
     border-radius: 5px;
     padding: 10px 0;
     background-color: #e5e5e5;
+    height: 10em;
+}
+
+.sponsorList::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 64px;
+    margin: -64px 0 10px;
+    background: linear-gradient(
+        to top,
+        rgba(236, 236, 236, 1),
+        60%,
+        rgba(236, 236, 236, 0)
+    );
 }
 
 .playerID {
