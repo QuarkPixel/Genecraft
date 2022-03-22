@@ -457,6 +457,11 @@
     font-weight: 700;
 }
 
+.item {
+    height: calc(48vw + 80px);
+    overflow: hidden;
+}
+
 .imgA {
     display: block;
     width: 700px;
@@ -504,7 +509,7 @@
 }
 
 .previewPicture .slick-center > .imgA {
-    box-shadow: 0 0 1.5vw var(--black4);
+    box-shadow: 0 0 10px var(--black2);
 }
 
 .version {
