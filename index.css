@@ -8,6 +8,7 @@
     margin: 5px;
     font-size: larger;
     font-weight: bold;
+    text-indent: 0.3em;
 }
 
 .cover {
@@ -176,33 +177,9 @@
     width: 58vw;
 }
 
-.welcome {
-    margin-bottom: 160px;
-}
-
 .welcome div img {
     width: 100%;
     background-position: top center;
-}
-
-.btn_join {
-    border: var(--mainColor) solid 2px;
-    color: var(--mainColor);
-    text-align: center;
-    line-height: 1.5em;
-    width: 5em;
-    margin: 20px 5vw 0 0;
-    font-size: xx-large;
-    border-radius: 18px;
-    float: right;
-    text-shadow: 0 0 25px var(--mainColor3);
-    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
-}
-
-.btn_join:hover {
-    transform: scale(1.1);
-    background-color: var(--mainColor);
-    color: #ececec;
 }
 
 .AD {
@@ -353,8 +330,8 @@
 }
 
 .announcement {
-    margin-bottom: 2vw;
     padding: 6px 0 12px;
+    margin-bottom: 2vw;
 }
 
 .announcement > div {
@@ -364,8 +341,32 @@
     border-radius: 5px;
 }
 
+.btn_href {
+    float: right;
+    margin: 8px 12px;
+    padding: 0 1em;
+    border: var(--mainColor) solid 2px;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: xx-large;
+    font-weight: 500;
+    color: var(--mainColor);
+    background-color: #e5e5e5;
+    border-radius: 18px;
+    text-shadow: 0 0 25px var(--mainColor3);
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
+}
+
+.btn_href:hover {
+    font-weight: 800;
+    background-color: var(--mainColor);
+    color: #ececec;
+    transform: scale(1.1);
+}
+
 .sponsorList {
     width: calc(100% - 10px);
+    margin-top: 2vw;
     padding: 12px 5px 24px;
     border-radius: 12px;
     box-shadow: 0 0 25px 2px var(--black1);
@@ -626,5 +627,13 @@
 
     .announcement {
         margin: 0 2vw 0 0;
+    }
+
+    .btn_href {
+        display: none;
+    }
+
+    .sponsorList {
+        margin: 0;
     }
 }
