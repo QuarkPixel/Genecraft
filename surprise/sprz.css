@@ -56,8 +56,8 @@ body {
 }
 
 #time {
-    font-size: 10vw;
     margin-bottom: -50pt;
+    font-size: 10vw;
     opacity: 0.6;
 }
 
