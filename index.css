@@ -199,6 +199,14 @@
     margin: 4px 2.8vw;
 }
 
+.iframeVideo {
+    margin-top: 2vw;
+}
+
+.iframeVideo > div {
+    border-radius: 6px;
+}
+
 .video iframe {
     width: 52vw;
     height: 31.5vw;
@@ -604,7 +612,7 @@
     .video iframe {
         width: 72vw;
         height: 40.5vw;
-        margin: 2vw 4vw 0;
+        margin: 0 4vw;
     }
 
     .dotsDiv {
