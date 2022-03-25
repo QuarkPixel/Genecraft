@@ -475,7 +475,7 @@ footer {
     transform-origin: 0 0;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 790px) {
     #logo {
         margin-right: 10px;
     }
@@ -489,13 +489,19 @@ footer {
     }
 }
 
-@media (max-width: 518px) {
+@media (max-width: 618px) {
     #navRight {
         display: none;
     }
 
     #navButton {
         display: block;
+    }
+}
+
+@media (max-width: 540px) {
+    #nav li a i {
+        display: none;
     }
 }
 
