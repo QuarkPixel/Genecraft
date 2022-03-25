@@ -1,5 +1,11 @@
 //食用方法见主文件夹内的 Readme.md
-var sponsorListII = ["sid_T$12.00", "QuarkPixel$33.09", "1uckily$62.80"]
+var sponsorListII = [
+    "QuarkPixel$10.00",
+    "方块国度$10.00",
+    "sid_T$12.00",
+    "QuarkPixel$33.09",
+    "1uckily$62.80",
+];
 
 var sponsorListI = [
     "zamonas$120.00",
@@ -13,4 +19,4 @@ var sponsorListI = [
     "zero_8_5$50.00",
     "uncle_hua$30.00",
     "kami$20.00",
-]
+];
