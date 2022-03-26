@@ -9,6 +9,7 @@
     font-size: larger;
     font-weight: bold;
     text-indent: 0.3em;
+    line-height: 1.2em;
 }
 
 .cover {
@@ -291,9 +292,9 @@
 
 .firstPartRight {
     float: right;
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
-    flex-direction: column;
+    flex-direction: column; */
     position: relative;
     width: 30vw;
 }
@@ -311,8 +312,6 @@
 }
 
 .logoImg {
-    position: absolute;
-    top: 0;
     width: 30vw;
     height: 30vw;
     animation: logoRotational 10s cubic-bezier(0.5, 0, 0, 1) 5s infinite
@@ -339,19 +338,30 @@
 
 .announcement {
     padding: 6px 0 12px;
-    margin-bottom: 2vw;
 }
 
 .announcement > div {
     background-color: #e5e5e5;
     margin: 5px;
-    padding: 10px 3px;
+    /* padding: 10px 3px; */
+    border: #e5e5e5 solid 10px;
+    border-width: 10px 3px;
     border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Firefox */
+    display: -moz-box;
+    -moz-line-clamp: 1;
+    -moz-box-orient: vertical;
+    /* Safari、Opera、Chrome */
+    display: -webkit-box;
+    /* 盒子垂直对齐 */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
 }
 
 .btn_href {
-    float: right;
-    margin: 8px 12px;
+    margin: 2vw 12px;
     padding: 0 1em;
     border: var(--mainColor) solid 2px;
     text-align: center;
@@ -373,7 +383,7 @@
 
 .sponsorList {
     width: calc(100% - 10px);
-    margin-top: 2vw;
+    /* margin-top: 2vw; */
     padding: 12px 5px 24px;
     border-radius: 12px;
     box-shadow: 0 0 25px 2px var(--black1);
