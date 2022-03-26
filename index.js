@@ -171,13 +171,6 @@ $(document).ready(function () {
         centerMode: true,
         pauseOnHover: false,
     });
-
-    if (document.body.offsetWidth >= 682) {
-        $(".firstPartRight").css(
-            "height",
-            $(".firstPartLeft").innerHeight() + "px"
-        );
-    }
 });
 
 var refreshWithDetectionWidth = $(window).width();
