@@ -1,21 +1,14 @@
 //!食用方法见主文件夹内的 Readme.md!
 
 ////AnnouncementText
-//First
-var announcementTitle_I = "我们加入爱发电啦！";
-var announcementBody_I =
-    '<a class="href" href="https://afdian.net/@genesis_craft">*戳我前往爱发电主页查看</a>';
-var displayTimeEnd_I = "20220210$20220510";
+var announcementText = [
+    '我们加入爱发电啦！$最近，我们加入了爱发电，欢迎赞助我们！<br /><a class="href" href="https://afdian.net/@genesis_craft">戳我前往爱发电主页查看</a>$-220401',
+    "为网站作者加油！$今天，网站的作者QuarkPixel正在中考，为他加油打气！$220619-220621",
+    "网站作者的生日！$今天是QuarkPixel的生日，去祝福他吧~$220919-220919",
+    "图片投稿$官网重新装修，需要多张照片。大佬们可以投稿你们的建筑，或者好看的景观。截图即可，像素高清点。<br />上传至「群相册-景观收集」即可$-",
+];
 
-//Second
-var announcementTitle_II = "图片投稿";
-var announcementBody_II =
-    "官网重新装修，需要多张照片。大佬们可以投稿你们的建筑，或者好看的景观。截图即可，像素高清点。<br />上传至「群相册-景观收集」即可";
-var displayTimeEnd_II = "$";
-
-//Last
-var announcement_X =
-    '暂时没有公告，可以去看看网页作者的<a class="href" href="https://twitter.com/Quark_Pixel">Twitter</a>？';
+////SponsorList
 
 var sponsorListII = [
     "QuarkPixel$10.00",
@@ -25,7 +18,6 @@ var sponsorListII = [
     "1uckily$62.80",
 ];
 
-////SponsorList
 var sponsorListI = [
     "zamonas$120.00",
     "Aiermisa$100.00",
