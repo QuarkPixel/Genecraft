@@ -11,4 +11,5 @@ var announcementBody_II =
 var displayTimeEnd_II = "$";
 
 //Last
-var announcement_X = "暂时没有公告，可以去看看网页作者的twitter？";
+var announcement_X =
+    '暂时没有公告，可以去看看网页作者的<a class="href" href="https://twitter.com/Quark_Pixel">Twitter</a>？';
