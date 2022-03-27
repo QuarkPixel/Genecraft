@@ -11,12 +11,34 @@ if (window.name == "") {
 }
 
 //Announcement
-date = parseInt(
+dateNow = parseInt(
     new Date().getYear().toString().substr(1) +
         PrefixZero((new Date().getMonth() + 1).toString()) +
         PrefixZero(new Date().getDate().toString())
 );
-// console.log(date);
+
+for (let i = 0; i < announcementText.length; i++) {
+    var announcementInfo = announcementText[i].split("$");
+    var displayTimeEnd = announcementInfo[2].split("-");
+
+    if (
+        dateNow < parseInt(displayTimeEnd[0]) ||
+        dateNow > parseInt(displayTimeEnd[1])
+    ) {
+        if (i == announcementText.length - 1) {
+            $(".announcement").remove();
+        }
+    } else {
+        $(".announcementBody").append(
+            '<p id="announcement-title">' + announcementInfo[0] + "</p>"
+        );
+        $(".announcementBody").append(
+            '<p id="announcement-body">' + announcementInfo[1] + "</p>"
+        );
+        break;
+    }
+}
+
 function PrefixZero(num) {
     return (Array(2).join(0) + num).slice(-2);
 }

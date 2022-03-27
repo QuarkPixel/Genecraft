@@ -353,6 +353,12 @@
     -webkit-line-clamp: 10;
 }
 
+#announcement-title {
+    font-size: larger;
+    font-weight: bold;
+    margin: 0 0 10px 2px;
+}
+
 .btn_href {
     margin: 2vw 12px;
     padding: 0 1em;
