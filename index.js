@@ -16,10 +16,11 @@ date = parseInt(
         PrefixZero((new Date().getMonth() + 1).toString()) +
         PrefixZero(new Date().getDate().toString())
 );
-console.log(date);
+// console.log(date);
 function PrefixZero(num) {
     return (Array(2).join(0) + num).slice(-2);
 }
+// $("p").append("<b>Hello</b>");
 
 //Bullet
 creatBullet_MaxTime = historyList.length - 1;
