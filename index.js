@@ -10,6 +10,17 @@ if (window.name == "") {
     window.name = "isReload";
 }
 
+//Announcement
+date = parseInt(
+    new Date().getYear().toString().substr(1) +
+        PrefixZero((new Date().getMonth() + 1).toString()) +
+        PrefixZero(new Date().getDate().toString())
+);
+console.log(date);
+function PrefixZero(num) {
+    return (Array(2).join(0) + num).slice(-2);
+}
+
 //Bullet
 creatBullet_MaxTime = historyList.length - 1;
 creatBullet_Times = creatBullet_MaxTime;
