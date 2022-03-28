@@ -42,7 +42,6 @@ for (let i = 0; i < announcementText.length; i++) {
 function PrefixZero(num) {
     return (Array(2).join(0) + num).slice(-2);
 }
-// $("p").append("<b>Hello</b>");
 
 //Bullet
 creatBullet_MaxTime = historyList.length - 1;
