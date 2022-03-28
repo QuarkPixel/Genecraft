@@ -545,6 +545,30 @@
     box-shadow: 0 0 10px var(--black2);
 }
 
+.friendlyLink {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.friendlyLink a {
+    width: 128px;
+    height: 128px;
+    color: #000;
+    font-size: 96px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 128px;
+}
+
+.friendlyLink img {
+    height: 80%;
+    /* margin: auto; */
+    margin-top: 10%;
+}
+
 .version {
     text-align: right;
     color: #ccc;
