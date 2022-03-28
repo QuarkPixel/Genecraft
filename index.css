@@ -481,7 +481,8 @@
 
 .introduce i {
     color: #525252;
-    font-size: 3.7vw;
+    font-size: 24pt;
+    font-weight: 600;
 }
 
 .introduce a {
@@ -634,18 +635,17 @@
     .firstPartRight {
         float: none;
         width: 90vw;
-        margin-top: 2vw;
-        justify-content: space-around;
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
         align-items: stretch;
     }
 
     .announcement {
-        margin: 0 2vw 0 0;
+        margin-bottom: 2vw;
     }
 
-    .btn_href {
-        display: none;
+    .btn_join {
+        order: -1;
     }
 
     .sponsorList {
