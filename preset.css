@@ -308,10 +308,7 @@ header {
 }
 
 footer {
-    width: 100%;
-}
-
-#mountain {
+    position: relative;
     width: 100vw;
     height: 42.5vw;
     background-image: url(https://imgtu.ly2018.top/img/2022/03/220327_WjKvNOLi_C-211127_pPiNooVM.webp);
@@ -321,107 +318,29 @@ footer {
 }
 
 .info {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
     text-align: center;
+    font-weight: bold;
+    box-shadow: var(--shadow_large);
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
 }
 
-.copyRight > a {
+.info > div {
+    opacity: 0.8;
+}
+
+.info a {
     display: inline;
 }
 
-.copyRight > i {
-    opacity: 0.1;
+.info > a {
+    font-size: 11pt;
+    opacity: 0.7;
 }
-
-/* #content {
-    padding: 25px 0;
-    background-color: #ececec;
-    width: 100vw;
-    overflow: auto;
-}
-
-.hrefList {
-    margin-left: 5%;
-    margin-right: 0;
-    width: 8em;
-    float: left;
-    text-align: left;
-}
-
-.hrefListTitle {
-    color: var(--mainColor);
-    text-shadow: 0 0 5px var(--mainColor3);
-    display: block;
-    margin: 0;
-    margin-bottom: 15px;
-}
-
-.hrefList ul li {
-    display: flex;
-    justify-items: left;
-    align-items: center;
-    perspective: 500px;
-}
-
-.hrefList ul li a {
-    color: #626262;
-    padding: 3px 10px;
-    margin: 3px 0;
-    transition: 0.2s;
-    border-radius: 5px;
-    text-shadow: 0 0 0 var(--mainColor0);
-}
-
-.hrefList ul li a:hover {
-    box-shadow: 0 0 8px var(--mainColor4);
-    color: black;
-    transform: translateZ(10px) rotateX(16deg);
-}
-
-#info {
-    float: right;
-    margin-right: 5%;
-    height: 100%;
-    width: 256px;
-}
-
-#info div {
-    float: right;
-    width: 256px;
-    margin-bottom: 20px;
-}
-
-#info div img {
-    float: right;
-    right: 0;
-    width: 256px;
-}
-
-#copyRight {
-    color: #999;
-    font-size: 0.9em;
-    line-height: 1em;
-    margin: 2em 0 0 0;
-    padding: 0;
-    text-align: end;
-}
-
-#copyRight li {
-    border-right: solid 2px #626262;
-    display: inline-block;
-    list-style: none;
-    margin-top: 10px;
-    padding: 0.5em;
-}
-
-#copyRight li a {
-    margin-top: 5px;
-}
-
-#copyRight li i {
-    display: block;
-    font-size: 8pt;
-    margin-top: 6px;
-} */
 
 .txt {
     font-size: large;
@@ -573,53 +492,9 @@ footer {
     }
 }
 
-@media (min-width: 1440px) {
-    #mountain {
-        width: 1440px;
-        height: 612px;
-        margin: 0 auto;
-    }
-}
-
 @media (max-width: 119px) {
     #navButton,
     #navMoreHref {
         display: none;
-    }
-}
-
-@media (max-width: 639px) {
-    #hrefDiv {
-        overflow: auto;
-    }
-
-    #info {
-        float: left;
-        margin-left: 5%;
-        height: auto;
-    }
-
-    #info div {
-        display: none;
-    }
-
-    #copyRight {
-        text-align: left;
-        margin-top: -10px;
-        text-align: start;
-    }
-
-    #copyRight li {
-        margin-top: 0;
-        border-right: none;
-        border-left: solid 2px var(--mainColor);
-    }
-
-    .hrefList {
-        margin-bottom: 30px;
-    }
-
-    .hrefListTitle {
-        margin-bottom: 5px;
     }
 }

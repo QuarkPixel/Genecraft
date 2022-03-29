@@ -70,3 +70,20 @@ body {
         font-size: 30pt;
     }
 }
+
+footer {
+    height: auto;
+    color: #fff;
+    background: none;
+}
+
+footer a {
+    color: #fff;
+}
+
+.info {
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    font-weight: normal;
+}
