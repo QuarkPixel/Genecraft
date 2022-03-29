@@ -1,7 +1,7 @@
 .modules {
     background-color: #ececec;
     border-radius: 12px;
-    box-shadow: 0 0 25px 2px var(--black1);
+    box-shadow: var(--shadow_large);
 }
 
 .mTitle {
@@ -384,7 +384,7 @@
     width: calc(100% - 10px);
     padding: 12px 5px 24px;
     border-radius: 12px;
-    box-shadow: 0 0 25px 2px var(--black1);
+    box-shadow: var(--shadow_large);
     background-color: #ececec;
 }
 
@@ -467,7 +467,7 @@
     padding: 8px 10px;
     border-radius: 10px;
     font-weight: 700;
-    box-shadow: 0 0 8px var(--black1);
+    box-shadow: var(--shadow_small);
 }
 
 .previewPicture {
@@ -542,35 +542,117 @@
 }
 
 .previewPicture .slick-center > .imgA {
-    box-shadow: 0 0 10px var(--black2);
+    box-shadow: var(--shadow_small);
 }
 
-.friendlyLink {
+/* .divider {
+    width: 100vw;
+    height: 2px;
+    background-color: var(--mainColor);
+    box-shadow: 0 0 15px 3px rgb(39, 128, 194);
+    z-index: 5;
+} */
+
+.content {
+    /* background-color: #fff; */
+    width: 100%;
+    padding: 25px 0;
+    box-shadow: 0 0 15px var(--mainColor3);
+    border-top: 2px solid var(--mainColor);
+    background-color: #ececec;
+}
+
+.hrefLink_ArrangementType {
+    margin: 20px auto;
+}
+
+.hrefLink_ArrangementType > p {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.hrefLink_ArrangementType > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 5%;
+    width: 100%;
 }
 
-.friendlyLink a {
+.hrefLink_ArrangementType > div > a {
+    position: relative;
     width: 128px;
-    height: 128px;
+    height: 160px;
+    margin: 6px 0;
     color: #000;
-    font-size: 96px;
+    font-size: 84px;
     font-weight: 800;
     text-align: center;
     line-height: 128px;
+    opacity: 0.5;
+    border-radius: 12px;
+    transition: all 0.2s cubic-bezier(0.08, 0.82, 0.2, 1);
 }
 
-.friendlyLink img {
-    height: 80%;
-    /* margin: auto; */
-    margin-top: 10%;
+.relatedLinks > div :nth-child(3)::before {
+    content: "Maker:";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12pt;
+    line-height: 12pt;
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: all 0.2s cubic-bezier(0.08, 0.82, 0.2, 1);
+}
+
+.relatedLinks > div :nth-child(3):hover::before {
+    opacity: 0.6;
+    transform: translate(0, 0);
+}
+
+.hrefLink_ArrangementType a:hover {
+    flex-grow: 1;
+    background-color: #fff;
+    box-shadow: var(--shadow_blue);
+    opacity: 0.9;
+}
+
+.hrefLink_ArrangementType a .instructions {
+    position: absolute;
+    top: 128px;
+    width: 100%;
+    font-size: 13pt;
+    text-align: center;
+    line-height: 13pt;
+    font-weight: normal;
+    opacity: 0;
+    transform: translate(0, -20px);
+    transition: all 0.2s cubic-bezier(0.08, 0.82, 0.2, 1);
+}
+
+.hrefLink_ArrangementType a:hover .instructions {
+    opacity: 0.9;
+    width: 100%;
+    transform: translate(0, 0);
+}
+
+.hrefLink_ArrangementType img {
+    height: 102.4px;
+    margin-top: 12.8px;
+}
+
+.relatedLinks {
+    max-width: 960px;
+}
+
+.allLinks {
+    max-width: 800px;
 }
 
 .version {
-    text-align: right;
+    /* text-align: right; */
     color: #ccc;
     font-size: 0.9em;
     margin-top: 4px;

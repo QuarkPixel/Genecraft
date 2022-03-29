@@ -206,9 +206,9 @@ $(document).ready(function () {
     });
 });
 
-var refreshWithDetectionWidth = $(window).width();
-setInterval(function () {
-    if ($(window).width() != refreshWithDetectionWidth) {
-        location.reload();
-    }
-}, 5000);
+// var refreshWithDetectionWidth = $(window).width();
+// setInterval(function () {
+//     if ($(window).width() != refreshWithDetectionWidth) {
+//         location.reload();
+//     }
+// }, 5000);
