@@ -205,10 +205,3 @@ $(document).ready(function () {
         pauseOnHover: false,
     });
 });
-
-// var refreshWithDetectionWidth = $(window).width();
-// setInterval(function () {
-//     if ($(window).width() != refreshWithDetectionWidth) {
-//         location.reload();
-//     }
-// }, 5000);

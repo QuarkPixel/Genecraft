@@ -1,13 +1,6 @@
 var sLIndex = document.querySelector("#sLIndex");
 
-// $(sLIndex).append(
-//     '<tr><td class="instructions" colspan="2" class="end"></td></tr>'
-// );
-// appendRow(" ");
 createFramework_sponsorList(sponsorListII);
-// $(sLIndex).append(
-//     '<tr><td class="instructions" colspan="2" class="end"></td></tr>'
-// );
 appendRow(" ");
 createFramework_sponsorList(sponsorListI);
 
