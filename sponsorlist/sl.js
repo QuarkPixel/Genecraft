@@ -3,7 +3,6 @@ var idName = [];
 var allMoney = 0;
 
 createFramework_sponsorList(sponsorListII);
-appendRow(" ");
 createFramework_sponsorList(sponsorListI);
 
 function createFramework_sponsorList(array) {
