@@ -11,6 +11,7 @@ var announcementText = [
 ////SponsorList
 
 var sponsorListII = [
+    "uncle_hua$20.00",
     "QuarkPixel$10.00",
     "方块国度$10.00",
     "sid_T$12.00",
