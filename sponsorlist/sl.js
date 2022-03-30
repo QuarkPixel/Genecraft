@@ -1,12 +1,14 @@
 var sLIndex = document.querySelector("#sLIndex");
 
-$(sLIndex).append(
-    '<tr><td class="instructions" colspan="2" class="end">充电：</td></tr>'
-);
+// $(sLIndex).append(
+//     '<tr><td class="instructions" colspan="2" class="end"></td></tr>'
+// );
+// appendRow(" ");
 createFramework_sponsorList(sponsorListII);
-$(sLIndex).append(
-    '<tr><td class="instructions" colspan="2" class="end">机器赞助：</td></tr>'
-);
+// $(sLIndex).append(
+//     '<tr><td class="instructions" colspan="2" class="end"></td></tr>'
+// );
+appendRow(" ");
 createFramework_sponsorList(sponsorListI);
 
 function createFramework_sponsorList(array) {
@@ -22,6 +24,12 @@ function createFramework_sponsorList(array) {
     }
 }
 
-$(sLIndex).append(
-    '<tr><td colspan="2" lang="en" class="end">Looking forward to your sponsor.</td></tr>'
+appendRow(
+    'Looking forward to your <a class="href" href="https://afdian.net/@genesis_craft" target="_blank" title="使用「爱发电」给我们赞助"lang="en">sponsor</a> .'
 );
+
+function appendRow(text) {
+    $(sLIndex).append(
+        '<tr><td colspan="2" lang="en" class="end">' + text + "</td></tr>"
+    );
+}
