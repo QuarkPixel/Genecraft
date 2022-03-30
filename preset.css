@@ -311,6 +311,7 @@ footer {
     position: relative;
     width: 100vw;
     height: 42.5vw;
+    min-height: 128px;
     background-image: url(https://imgtu.ly2018.top/img/2022/03/220327_WjKvNOLi_C-211127_pPiNooVM.webp);
     background-size: 100% auto;
     background-repeat: no-repeat;
