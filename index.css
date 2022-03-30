@@ -609,20 +609,22 @@
 
 .hrefLink_ArrangementType a .instructions {
     position: absolute;
-    top: 128px;
+    top: 120px;
     width: 100%;
     font-size: 13pt;
     text-align: center;
     line-height: 13pt;
     font-weight: normal;
-    opacity: 0;
-    transform: translate(0, -20px);
+    opacity: 0.6;
+    transform: translate(0, -10px);
     transition: all 0.2s cubic-bezier(0.08, 0.82, 0.2, 1);
 }
 
 .hrefLink_ArrangementType a:hover .instructions {
     opacity: 0.9;
     width: 100%;
+    font-weight: 800;
+    font-size: 16pt;
     transform: translate(0, 0);
 }
 
