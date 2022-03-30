@@ -46,4 +46,5 @@ td {
 .end {
     font-size: larger;
     font-weight: bold;
+    padding: 3px 0;
 }
