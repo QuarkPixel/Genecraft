@@ -31,9 +31,9 @@ for (var i in idName) {
 appendRow(
     "目前共获得捐赠￥" +
         allMoney +
-        "，感谢为本服做贡献的" +
+        "<br />感谢为本服做贡献的 " +
         memberArray.length +
-        "位老板~"
+        " 位老板~"
 );
 
 appendRow(
