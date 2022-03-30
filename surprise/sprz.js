@@ -16,6 +16,21 @@ if (xmlhttp.status == 200) {
     window.location.href = "../404.html";
 }
 
+var backBottle = document.querySelector(".back");
+var back = true;
+backBottle.onclick = function () {
+    if (back) {
+        window.opener = null;
+        window.open("", "_self");
+        window.close();
+    } else {
+        window.location.href = "../";
+    }
+    setTimeout(function () {
+        back = false;
+    }, 600);
+};
+
 function time() {
     var date = new Date();
     document.getElementById("time").innerHTML =
