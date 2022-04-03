@@ -1,6 +1,7 @@
 @font-face {
     font-family: calluna;
-    src: url(resources/CallunaSans.woff2);
+    src: url(resources/oppo-M.woff);
+    src: url(resources/oppo-B.woff);
     font-display: swap;
 }
 
