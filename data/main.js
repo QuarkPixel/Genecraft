@@ -2,7 +2,7 @@
 
 ////AnnouncementText
 var announcementText = [
-    '地标建筑填写$官网最近准备添加地标建筑填写，前往链接以填写～<br /><a class="href" href="https://shimo.im/sheets/Wr3DVO1L8Pte7gkJ/MODOC">石墨文档</a>$-220529',
+    '地标建筑填写$官网最近准备添加地标建筑填写，点击链接以填写～如果不想注册账号可以给QuarkPixel发消息代填。<br /><a class="href" href="https://shimo.im/sheets/Wr3DVO1L8Pte7gkJ/MODOC">石墨文档</a>$-220529',
     "为网站作者加油！$今天，网站的作者QuarkPixel正在中考，为他加油打气！$220619-220621",
     "网站作者的生日！$今天是QuarkPixel的生日，去祝福他吧~$220919-220919",
     "图片投稿$官网重新装修，需要多张照片。大佬们可以投稿你们的建筑，或者好看的景观。截图即可，像素高清点。<br />上传至「群相册-景观收集」即可$-",
