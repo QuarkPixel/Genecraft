@@ -50,6 +50,7 @@ var bannedList = [
 
 ////HistoryEvent
 var historyList = [
+    "2022.4.17$出现新梗「洞洞」$来自 sid_T & QuarkPixel",
     "2022.3.23$我服开通爱发电$欢迎朝我们砸电池~",
     "2021.10.7$新官网开始搭建$由 QuarkPixel 一人编写",
     "2021.6.10$BE端支持加入服务器$打破次元壁",
