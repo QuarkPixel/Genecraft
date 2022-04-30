@@ -23,7 +23,7 @@ _数据存储于 `data / galleryHref.js` 内的 `imgHref` 中_
 
 ##### 示例
 
-```json
+```
 var imgHref = [
     ‘<full_link>’
     ‘&r;<abb_link>’,
@@ -50,7 +50,7 @@ var imgHref = [
 
 缩写后：
 
-```json
+```
 var abbreviations = ”https://www.genecraft.top/img/“
 var imgHref = [
     ”&r;114514-1.png“,
@@ -67,12 +67,12 @@ _数据存储于 `data / main.js` 内的 `announcementText` 中_
 
 ##### 示例
 
-```json
+```
 var announcementText = [
     ‘<title>$<text>$<start_time>-<end_time>‘,//规定时间段显示
     ‘<title>$<text>$-<end_time>‘,//时间在<end_time>之前时，会显示
-    ‘<title>$<text>$<start_time>-‘,￼//时间在<start_time>之后时，会显示
-    ‘<title>$<text>$-‘,￼//无论何时都显示
+    ‘<title>$<text>$<start_time>-‘,//时间在<start_time>之后时，会显示
+    ‘<title>$<text>$-‘,//无论何时都显示
 ];
 //<title>标题
 //<text>内容
@@ -100,12 +100,12 @@ _数据存储于 `data / main.js` 内的 `sponsorListI` 和 `sponsorListII` 中_
 
 ##### 示例
 
-```json
+```
 var sponsorListII = [
-    ‘<id>$￼<money>’,
+    ‘<id>$<money>’,
 ];
 var sponsorListI = [
-    ‘<id>$￼<money>’,
+    ‘<id>$<money>’,
 ];
 //<id>赞助者名称
 //<money>赞助金额
@@ -123,7 +123,7 @@ _数据存储于 `data / main.js` 内的 `bannedList` 中_
 
 ##### 示例
 
-```json
+```
 var bannedList = [
     ”<id>$<primary_reason>$<secondary_reason>$<time>$<remark>“,
 ];
@@ -148,13 +148,13 @@ _数据存储于 `data / main.js` 内的 `historyList` 中_
 
 ##### 示例
 
-```json
+```
 var historyList = [
-    ”<time>$<first_text>$<second_￼text>“,
+    ”<time>$<first_text>$<second_text>“,
 ];
 //<time>发生时间
 //<first_text>上半句话
-//<second_￼text>下半句话
+//<second_text>下半句话
 ```
 
 ##### 说明
