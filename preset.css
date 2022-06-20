@@ -1,6 +1,7 @@
 @font-face {
-    font-family: calluna;
-    src: url(resources/CallunaSans.woff2);
+    font-family: opposans;
+    src: url(resources/type/oppo_M.woff), url(resources/type/oppo_L.woff),
+        url(resources/type/oppo_B.woff);
     font-display: swap;
 }
 
@@ -42,7 +43,7 @@
 body {
     color: var(--black);
     background-color: #ccc;
-    font-family: calluna, PingFang SC, Microsoft YaHei, "微软雅黑", Arial,
+    font-family: opposans, PingFang SC, Microsoft YaHei, "微软雅黑", Arial,
         Helvetica, sans-serif;
     font-size: 12pt;
 }

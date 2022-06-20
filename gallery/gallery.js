@@ -2,7 +2,7 @@ let arrNumber = imgHref.length;
 var imgNumber = 0;
 var removeTimes = 0;
 
-function creatImgBox() {
+function createImgBox() {
     codImgID = (Array(5).join(0) + (arrNumber - imgNumber)).slice(-5);
     codImg = window.btoa(codImgID);
     $(".container").append(
@@ -18,7 +18,7 @@ function creatImgBox() {
 }
 
 for (let i = 0; i < 4; i++) {
-    creatImgBox();
+    createImgBox();
 }
 
 window.onload = function () {
@@ -32,7 +32,7 @@ window.onload = function () {
                 window.innerHeight
             ) {
                 if (imgNumber < arrNumber) {
-                    creatImgBox();
+                    createImgBox();
                 } else {
                     $(".over div img").fadeOut("fast");
                     $(".over p").fadeIn("fast");

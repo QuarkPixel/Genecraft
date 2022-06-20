@@ -1,6 +1,6 @@
 var prIndex = document.querySelector(".pr .wrap");
 reverseOrder = false;
-creatBox();
+createBox();
 if (window.name == "") {
     $(prIndex).fadeIn("200");
     window.name = "isReload";
@@ -8,7 +8,7 @@ if (window.name == "") {
     $(prIndex).show();
 }
 
-function creatBox() {
+function createBox() {
     for (i = 0; i < historyList.length; i++) {
         var listOne = historyList[order(i)].split("$");
         var date = listOne[0].split(".");
@@ -52,7 +52,7 @@ orderButton.onclick = function () {
         } else {
             reverseOrder = false;
         }
-        creatBox();
+        createBox();
     }
     setTimeout(reloadList, 280);
 
