@@ -12,7 +12,75 @@
     line-height: 1.2em;
 }
 
-.cover {
+.page_welcome {
+    width: 100vw;
+    background: center top
+        url(https://imgtu.ly2018.top/img/2022/03/220327_roD2IM5E_C_220119_RzXHol9H_211106_B2E111WI4nC.webp)
+        no-repeat fixed;
+    background-size: 100vw auto;
+    background-color: #000;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.page_welcome_animation {
+    animation: page_welcome_animation cubic-bezier(0.37, 0.84, 0.16, 1) 3s;
+}
+
+@media (max-width: 908px) {
+    .page_welcome {
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .page_welcome_animation {
+        animation: none;
+    }
+}
+
+@keyframes page_welcome_animation {
+    0% {
+        background-size: 130vw auto;
+    }
+
+    100% {
+        background-size: 100vw auto;
+    }
+}
+
+.blackCloth {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.page_welcome > img {
+    margin: 128px 0 0 5vw;
+    height: auto;
+    width: 60vw;
+}
+
+.page_welcome_supplement {
+    text-align: end;
+    color: #fff;
+    margin-right: 5vw;
+}
+
+.welPage_divider_father {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    margin: 24px 0 -1px;
+}
+
+.welPage_divider_father > div > img {
+    height: 48px;
+    float: left;
+    image-rendering: pixelated;
+}
+
+/* .cover {
     height: 57vw;
     width: 100vw;
     position: relative;
@@ -22,12 +90,6 @@
         no-repeat fixed;
     background-size: 100vw auto;
     margin-bottom: -1px;
-}
-
-.blackCloth {
-    width: 100%;
-    height: 100%;
-    position: absolute;
 }
 
 .coverText {
@@ -41,18 +103,9 @@
     image-rendering: pixelated;
 }
 
-.GC {
-    margin-top: 80px;
-}
-
-.GC p {
-    font-size: 15vw;
-    font-weight: 700;
-    letter-spacing: 0.4vw;
-    text-indent: 2vw;
-    color: #f5f5f7;
-    text-shadow: 1px 1px 15px var(--black1);
-    line-height: 18vw;
+.coverText img {
+    margin: calc(80px + 5vw) 0 0 5vw;
+    width: 60vw;
 }
 
 .TBW {
@@ -66,10 +119,10 @@
     padding: 3px;
 }
 
-@media (max-width: 465px) {
+@media (max-width: 996px) {
     .cover {
-        background-size: 465px auto;
-        height: 265px;
+        background-size: 996px auto;
+        height: calc(27vw + 256px);
     }
 
     .GC {
@@ -78,13 +131,7 @@
         justify-content: space-around;
         height: 180px;
     }
-}
-
-@media (max-width: 100px) {
-    .TBW {
-        display: none;
-    }
-}
+} */
 
 .title {
     font-size: 40pt;

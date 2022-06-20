@@ -1,13 +1,21 @@
-//Cover
-if (window.name == "") {
-    $(".blackCloth").css("background-color", "var(--black10)");
-    setTimeout(function () {
-        $(".blackCloth").css({
-            "background-color": "var(--black0)",
-            transition: "ease-in 2.5s",
-        });
-    }, 100);
-    window.name = "isReload";
+//Cover;
+// if (window.name == "") {
+$(".blackCloth").css("background-color", "var(--black10)");
+$(".page_welcome").addClass("page_welcome_animation");
+setTimeout(function () {
+    $(".blackCloth").css({
+        "background-color": "var(--black0)",
+        transition: "ease-in 2.5s",
+    });
+}, 100);
+window.name = "isReload";
+// }
+
+//Create many dividers
+for (let i = 0; i < Math.ceil(window.innerWidth / 480); i++) {
+    $(".welPage_divider_father > div").append(
+        '<img src="https://imgtu.ly2018.top/img/2022/06/220620_fAgJfuvd_divider.png">'
+    );
 }
 
 //Announcement
@@ -44,8 +52,8 @@ function PrefixZero(num) {
 }
 
 //Bullet
-creatBullet_MaxTime = historyList.length - 1;
-creatBullet_Times = creatBullet_MaxTime;
+createBullet_MaxTime = historyList.length - 1;
+createBullet_Times = createBullet_MaxTime;
 var boxH = $(".bulletBox").height();
 var numberRows = parseInt(boxH / 64);
 
@@ -69,7 +77,7 @@ if (numberRows != 0) {
 
     setInterval(function () {
         var pageW = $(".bulletBox").width() + "px";
-        var listOne = historyList[creatBullet_Times].split("$");
+        var listOne = historyList[createBullet_Times].split("$");
         var date = listOne[0].split(".");
         if (Math.random() * 10 < 0.05) {
             var newText = $(
@@ -105,10 +113,10 @@ if (numberRows != 0) {
             }
         );
         newText.appendTo(".bulletText");
-        if (creatBullet_Times <= 0) {
-            creatBullet_Times = creatBullet_MaxTime;
+        if (createBullet_Times <= 0) {
+            createBullet_Times = createBullet_MaxTime;
         } else {
-            creatBullet_Times -= 1;
+            createBullet_Times -= 1;
         }
         if (randomArray_Times >= numberRows - 1) {
             randomArray_Times = 0;
@@ -206,9 +214,9 @@ $(document).ready(function () {
     });
 });
 
-var refreshWithDetectionWidth = $(window).width();
-setInterval(function () {
-    if ($(window).width() != refreshWithDetectionWidth) {
-        location.reload();
-    }
-}, 5000);
+// var refreshWithDetectionWidth = $(window).width();
+// setInterval(function () {
+//     if ($(window).width() != refreshWithDetectionWidth) {
+//         location.reload();
+//     }
+// }, 5000);
