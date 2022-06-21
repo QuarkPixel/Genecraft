@@ -11,6 +11,10 @@ if (window.name == "") {
     window.name = "isReload";
 }
 
+// var aa = document.getElementById("1223");
+// console.log(aa);
+// console.log(aa.innerText);
+
 //Create many dividers
 for (let i = 0; i < Math.ceil(window.innerWidth / 480); i++) {
     $(".welPage_divider_father > div").append(
@@ -217,7 +221,12 @@ $(document).ready(function () {
 //Footer
 var wallpaper_serial = Math.floor(Math.random() * WallpaperList.length);
 wallpaper_info = WallpaperList[wallpaper_serial].split("$");
-$("footer").css("background-image", "url(" + wallpaper_info[0] + ")");
+$("footer").css(
+    "background-image",
+    "url(" +
+        wallpaper_info[0] +
+        "),linear-gradient(var(--black0), var(--black2))"
+);
 $(".info").append(
     '<a href="' +
         wallpaper_info[2] +

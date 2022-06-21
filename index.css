@@ -49,16 +49,20 @@
 }
 
 .blackCloth {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
     z-index: 1;
+    pointer-events: none;
 }
 
 .page_welcome > img {
+    position: relative;
     margin: 128px 0 0 5vw;
     height: auto;
     width: 60vw;
+    pointer-events: none;
+    z-index: 3;
 }
 
 .page_welcome_supplement {
@@ -71,12 +75,13 @@
     position: relative;
     overflow: hidden;
     z-index: 2;
-    margin: 24px 0 -1px;
+    margin-top: 24px;
 }
 
 .welPage_divider_father > div > img {
     height: 48px;
     float: left;
+    transform: translateY(1px);
     image-rendering: pixelated;
 }
 
