@@ -80,59 +80,6 @@
     image-rendering: pixelated;
 }
 
-/* .cover {
-    height: 57vw;
-    width: 100vw;
-    position: relative;
-    top: -80px;
-    background: center top
-        url(https://imgtu.ly2018.top/img/2022/03/220327_roD2IM5E_C_220119_RzXHol9H_211106_B2E111WI4nC.webp)
-        no-repeat fixed;
-    background-size: 100vw auto;
-    margin-bottom: -1px;
-}
-
-.coverText {
-    position: relative;
-    width: 100%;
-    top: 80px;
-    height: calc(100% - 79px);
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAFCAYAAAAHQL+kAAAAAXNSR0IArs4c6QAAAI1JREFUKJGdTlkVwCAMCxKqAQv1ryAWqqES2Bc8VujGlp+eOQAAZtawQbY/wRfNk9/485ptR+i7WLM+Mz3ReQs851l++jEzInm7kVz+snvcn3rEwPMc9Um2YmbN3aGqhWQTEbg7YgUwelUdPBFBrbV0cQC3+8zrePKY0XUALBkiZwTIxHbIgmXzX3zRuQC4BCJvyuuYdQAAAABJRU5ErkJggg==)
-        repeat-x center bottom;
-    background-size: auto 5vw;
-    image-rendering: pixelated;
-}
-
-.coverText img {
-    margin: calc(80px + 5vw) 0 0 5vw;
-    width: 60vw;
-}
-
-.TBW {
-    position: absolute;
-    right: 5vw;
-    bottom: 6vw;
-    font-size: 2vw;
-    text-align: right;
-    color: #f5f5f7;
-    text-shadow: 0 0 5px var(--greyColor);
-    padding: 3px;
-}
-
-@media (max-width: 996px) {
-    .cover {
-        background-size: 996px auto;
-        height: calc(27vw + 256px);
-    }
-
-    .GC {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 180px;
-    }
-} */
-
 .title {
     font-size: 40pt;
     font-weight: 700;
