@@ -1,15 +1,15 @@
 //Cover;
-// if (window.name == "") {
-$(".blackCloth").css("background-color", "var(--black10)");
-$(".page_welcome").addClass("page_welcome_animation");
-setTimeout(function () {
-    $(".blackCloth").css({
-        "background-color": "var(--black0)",
-        transition: "ease-in 2.5s",
-    });
-}, 100);
-window.name = "isReload";
-// }
+if (window.name == "") {
+    $(".blackCloth").css("background-color", "var(--black10)");
+    $(".page_welcome").addClass("page_welcome_animation");
+    setTimeout(function () {
+        $(".blackCloth").css({
+            "background-color": "var(--black0)",
+            transition: "ease-in 2.5s",
+        });
+    }, 100);
+    window.name = "isReload";
+}
 
 //Create many dividers
 for (let i = 0; i < Math.ceil(window.innerWidth / 480); i++) {
@@ -213,6 +213,20 @@ $(document).ready(function () {
         pauseOnHover: false,
     });
 });
+
+//Footer
+var wallpaper_serial = Math.floor(Math.random() * WallpaperList.length);
+wallpaper_info = WallpaperList[wallpaper_serial].split("$");
+$("footer").css("background-image", "url(" + wallpaper_info[0] + ")");
+$(".info").append(
+    '<a href="' +
+        wallpaper_info[2] +
+        '" target="_blank" title="' +
+        wallpaper_info[3] +
+        '" class="info_maker"><i class="txtSmall">地图作者: </i>' +
+        wallpaper_info[1] +
+        "</a>"
+);
 
 // var refreshWithDetectionWidth = $(window).width();
 // setInterval(function () {

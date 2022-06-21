@@ -313,7 +313,8 @@ footer {
     width: 100vw;
     height: 42.5vw;
     min-height: 128px;
-    background-image: url(https://imgtu.ly2018.top/img/2022/03/220327_WjKvNOLi_C-211127_pPiNooVM.webp);
+    /* background-image: url(https://imgtu.ly2018.top/img/2022/03/220327_WjKvNOLi_C-211127_pPiNooVM.webp); */
+    /* background-image: url(resources/云顶森林.png); */
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -343,6 +344,15 @@ footer {
 .info > a {
     font-size: 11pt;
     opacity: 0.7;
+}
+
+.info_maker {
+    position: absolute;
+    bottom: 10px;
+    left: 1em;
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: var(--black5);
 }
 
 .txt {
