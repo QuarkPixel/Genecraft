@@ -11,14 +11,12 @@ if (window.name == "") {
     window.name = "isReload";
 }
 
-// var aa = document.getElementById("1223");
-// console.log(aa);
-// console.log(aa.innerText);
-
 //Create many dividers
 for (let i = 0; i < Math.ceil(window.innerWidth / 480); i++) {
     $(".welPage_divider_father > div").append(
-        '<img src="https://imgtu.ly2018.top/img/2022/06/220620_fAgJfuvd_divider.png">'
+        '<img style="--i: ' +
+            Math.round(Math.random()) +
+            '" src="https://imgtu.ly2018.top/img/2022/06/220620_fAgJfuvd_divider.png">'
     );
 }
 
@@ -217,25 +215,6 @@ $(document).ready(function () {
         pauseOnHover: false,
     });
 });
-
-//Footer
-var wallpaper_serial = Math.floor(Math.random() * WallpaperList.length);
-wallpaper_info = WallpaperList[wallpaper_serial].split("$");
-$("footer").css(
-    "background-image",
-    "url(" +
-        wallpaper_info[0] +
-        "),linear-gradient(var(--black0), var(--black2))"
-);
-$(".info").append(
-    '<a href="' +
-        wallpaper_info[2] +
-        '" target="_blank" title="' +
-        wallpaper_info[3] +
-        '" class="info_maker"><i class="txtSmall">地图作者: </i>' +
-        wallpaper_info[1] +
-        "</a>"
-);
 
 // var refreshWithDetectionWidth = $(window).width();
 // setInterval(function () {
