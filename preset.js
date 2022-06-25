@@ -3,27 +3,25 @@ var allPages = [
     ["../document", "文档", "fas fa-bookmark fa-fw fa-xs"],
     ["../gallery", "图册", "fas fa-images fa-fw fa-sm"],
     ["../history", "历史", "fa-solid fa-clock-rotate-left fa-fw fa-sm"],
-    ["../sponsorlist", "赞助", "fas fa-dollar-sign fa-xs"],
+    ["../sponsorlist", "赞助", "fas fa-dollar-sign fa-sm"],
     ["../bannedlist", "封禁", "fas fa-book-dead fa-xs fa-fw"],
 ];
 
+$("body").prepend(
+    '<header class="unCopy"><div id="getLengthTheTemporaryDiv"style="width: 4em;height: 0;font-size: 20pt;pointer-events: none;opacity: 0;"></div></header>'
+);
+
 title = document.getElementsByClassName("header_title");
 div_header = document.getElementsByTagName("header");
-
-// $(".header_link").prepend(
-//     '<a class="header_logo" href="https://www.genecraft.top/">' +
-//         allPages[currentPage][1] +
-//         "</a>"
-// );
 
 $(div_header).prepend(
     '<div class="header_link"><a class="header_logo" href="https://www.genecraft.top/"></a><a class="header_title" href="' +
         allPages[currentPage][0] +
         '"><i class="' +
         allPages[currentPage][2] +
-        '"></i>' +
+        '"></i>&thinsp;' +
         allPages[currentPage][1] +
-        '</a><div id="header_completeLinks"></div></div>'
+        '</a><div id="header_completeLinks"></div><div class="hamburg"><input type="checkbox" id="hamburg_checkbox" style="display: none" /><label for="hamburg_checkbox" class="hamburg_button"><a href="" title="更多链接"><div></div><div></div><div></div></a></label><div class="hamburg_links" id="hamburg_links"></div></div></div>'
 );
 
 getLengthTheTemporaryDiv = document.getElementById("getLengthTheTemporaryDiv");
@@ -36,54 +34,54 @@ if (allPages.length - 1 < allPages_serial_maxNumber) {
     allPages_serial_maxNumber = allPages.length - 1;
 }
 
-// console.log(allPages_serial_maxNumber);
-// console.log(document.body.clientWidth);
+var allPages_serial_number = 0;
 
-for (
-    let i = 0;
-    i < allPages_serial_maxNumber;
-    // allPages_serial_number < allPages.length;
-    i++
-) {
+for (let i = 0; i < allPages_serial_maxNumber; i++) {
     if (i != currentPage) {
         $(document.getElementById("header_completeLinks")).append(
             '<a href="' +
                 allPages[i][0] +
                 '"><i class="' +
                 allPages[i][2] +
-                '"></i>' +
+                '"></i>&thinsp;' +
                 allPages[i][1] +
                 "</a>"
         );
-    } else {
-        i++;
+    } else if (allPages_serial_maxNumber != allPages.length - 1) {
+        allPages_serial_maxNumber++;
     }
     allPages_serial_number = i;
 }
 
-console.log(allPages.length - allPages_serial_maxNumber - 1);
-// console.log();
-// console.log(allPages_serial_maxNumber);
+var hamburg_maxLinks =
+    allPages_serial_number + allPages.length - allPages_serial_maxNumber + 1;
+
 for (
-    let i = allPages_serial_number;
-    i < allPages_serial_maxNumber;
+    let i = allPages_serial_number + 1;
+    i < hamburg_maxLinks;
     // allPages_serial_number < allPages.length;
     i++
 ) {
-    console.log(111);
-    // if (allPages_serial_number != currentPage) {
-    //     $(document.getElementById("header_completeLinks")).append(
-    //         '<a href="' +
-    //             allPages[allPages_serial_number][0] +
-    //             '"><i class="' +
-    //             allPages[allPages_serial_number][2] +
-    //             '"></i>' +
-    //             allPages[allPages_serial_number][1] +
-    //             "</a>"
-    //     );
-    // } else {
-    //     allPages_serial_maxNumber++;
-    // }
+    if (i != currentPage) {
+        $(document.getElementsByClassName("hamburg_links")[0]).prepend(
+            '<a href="' +
+                allPages[i][0] +
+                '"><i class="' +
+                allPages[currentPage][2] +
+                '"></i>&thinsp;' +
+                allPages[i][1] +
+                "</a>"
+            //         '<a href="' +
+            //             allPages[allPages_serial_number][0] +
+            //             '"><i class="' +
+            //             allPages[allPages_serial_number][2] +
+            //             '"></i>' +
+            //             allPages[allPages_serial_number][1] +
+            //             "</a>"
+        );
+    } else {
+        //     allPages_serial_maxNumber++;
+    }
 }
 
 ////Footer Wallpaper
