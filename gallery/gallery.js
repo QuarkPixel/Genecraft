@@ -6,7 +6,7 @@ function createImgBox() {
     codImgID = (Array(5).join(0) + (arrNumber - imgNumber)).slice(-5);
     codImg = window.btoa(codImgID);
     $(".container").append(
-        '<div class="item"><div class="picture"style="--j: ' +
+        '<div class="item"><div class="picture" style="--j: ' +
             Math.round((Math.random() * 4 - 2) * 10) / 10 +
             'deg"><a href="view/#' +
             codImg +
