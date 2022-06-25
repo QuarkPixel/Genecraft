@@ -7,82 +7,92 @@ var allPages = [
     ["../bannedlist", "封禁", "fas fa-book-dead fa-xs fa-fw"],
 ];
 
-$("body").prepend(
-    '<header class="unCopy"><div id="getLengthTheTemporaryDiv"style="width: 4em;height: 0;font-size: 20pt;pointer-events: none;opacity: 0;"></div></header>'
-);
+function createHeader() {
+    $("body").prepend(
+        '<header class="unCopy"><div id="getLengthTheTemporaryDiv"style="width: 4em;height: 0;font-size: 20pt;pointer-events: none;opacity: 0;"></div></header>'
+    );
 
-title = document.getElementsByClassName("header_title");
-div_header = document.getElementsByTagName("header");
+    title = document.getElementsByClassName("header_title");
+    div_header = document.getElementsByTagName("header");
 
-$(div_header).prepend(
-    '<div class="header_link"><a class="header_logo" href="https://www.genecraft.top/"></a><a class="header_title" href="' +
-        allPages[currentPage][0] +
-        '"><i class="' +
-        allPages[currentPage][2] +
-        '"></i>&thinsp;' +
-        allPages[currentPage][1] +
-        '</a><div id="header_completeLinks"></div><div class="hamburg"><input type="checkbox" id="hamburg_checkbox" style="display: none" /><label for="hamburg_checkbox" class="hamburg_button"><a href="" title="更多链接"><div></div><div></div><div></div></a></label><div class="hamburg_links" id="hamburg_links"></div></div></div>'
-);
+    $(div_header).prepend(
+        '<div class="header_link"><a class="header_logo" href="https://www.genecraft.top/"></a><a class="header_title" href="' +
+            allPages[currentPage][0] +
+            '"><i class="' +
+            allPages[currentPage][2] +
+            '"></i>&thinsp;' +
+            allPages[currentPage][1] +
+            '</a><div id="header_completeLinks"></div><div class="hamburg"><input type="checkbox" id="hamburg_checkbox" style="display: none" /><label for="hamburg_checkbox" class="hamburg_button"><a href="" title="更多链接"><div></div><div></div><div></div></a></label><div class="hamburg_links"></div></div></div>'
+    );
 
-getLengthTheTemporaryDiv = document.getElementById("getLengthTheTemporaryDiv");
-allPages_serial_maxNumber = parseInt(
-    (document.body.clientWidth - 430) /
-        $(getLengthTheTemporaryDiv)[0].getBoundingClientRect().width.toFixed(3)
-);
+    getLengthTheTemporaryDiv = document.getElementById(
+        "getLengthTheTemporaryDiv"
+    );
+    allPages_serial_maxNumber = parseInt(
+        (document.body.clientWidth - 430) /
+            $(getLengthTheTemporaryDiv)[0]
+                .getBoundingClientRect()
+                .width.toFixed(3)
+    );
 
-if (allPages.length - 1 < allPages_serial_maxNumber) {
-    allPages_serial_maxNumber = allPages.length - 1;
-}
-
-var allPages_serial_number = 0;
-
-for (let i = 0; i < allPages_serial_maxNumber; i++) {
-    if (i != currentPage) {
-        $(document.getElementById("header_completeLinks")).append(
-            '<a href="' +
-                allPages[i][0] +
-                '"><i class="' +
-                allPages[i][2] +
-                '"></i>&thinsp;' +
-                allPages[i][1] +
-                "</a>"
-        );
-    } else if (allPages_serial_maxNumber != allPages.length - 1) {
-        allPages_serial_maxNumber++;
+    if (allPages.length - 1 < allPages_serial_maxNumber) {
+        allPages_serial_maxNumber = allPages.length - 1;
     }
-    allPages_serial_number = i;
-}
 
-var hamburg_maxLinks =
-    allPages_serial_number + allPages.length - allPages_serial_maxNumber + 1;
+    console.log(allPages_serial_maxNumber);
 
-for (
-    let i = allPages_serial_number + 1;
-    i < hamburg_maxLinks;
-    // allPages_serial_number < allPages.length;
-    i++
-) {
-    if (i != currentPage) {
-        $(document.getElementsByClassName("hamburg_links")[0]).prepend(
-            '<a href="' +
-                allPages[i][0] +
-                '"><i class="' +
-                allPages[currentPage][2] +
-                '"></i>&thinsp;' +
-                allPages[i][1] +
-                "</a>"
-            //         '<a href="' +
-            //             allPages[allPages_serial_number][0] +
-            //             '"><i class="' +
-            //             allPages[allPages_serial_number][2] +
-            //             '"></i>' +
-            //             allPages[allPages_serial_number][1] +
-            //             "</a>"
-        );
+    var allPages_serial_number = 0;
+
+    for (let i = 0; i < allPages_serial_maxNumber; i++) {
+        if (i != currentPage) {
+            $(document.getElementById("header_completeLinks")).append(
+                '<a href="' +
+                    allPages[i][0] +
+                    '"><i class="' +
+                    allPages[i][2] +
+                    '"></i>&thinsp;' +
+                    allPages[i][1] +
+                    "</a>"
+            );
+            console.log(i + "|" + allPages_serial_maxNumber);
+            // } else if (allPages_serial_maxNumber != allPages.length - 1) {
+        } else {
+            allPages_serial_maxNumber++;
+        }
+        allPages_serial_number = i;
+    }
+
+    var hamburg_maxLinks =
+        allPages_serial_number +
+        allPages.length -
+        allPages_serial_maxNumber +
+        1;
+
+    allPages_serial_number++;
+
+    console.log("dd: " + hamburg_maxLinks + "|" + allPages_serial_number);
+
+    if (hamburg_maxLinks > allPages_serial_number) {
+        for (let i = allPages_serial_number; i < hamburg_maxLinks; i++) {
+            if (i != currentPage) {
+                $(document.getElementsByClassName("hamburg_links")[0]).prepend(
+                    '<a href="' +
+                        allPages[i][0] +
+                        '"><i class="' +
+                        allPages[currentPage][2] +
+                        '"></i>&thinsp;' +
+                        allPages[i][1] +
+                        "</a>"
+                );
+            }
+        }
     } else {
-        //     allPages_serial_maxNumber++;
+        console.log("delete");
+        document.querySelectorAll(".hamburg")[0].remove();
     }
 }
+
+createHeader();
 
 ////Footer Wallpaper
 var WallpaperList = [
