@@ -92,7 +92,6 @@ setInterval(function () {
     if ($(window).width() != refreshWithDetectionWidth) {
         document.querySelectorAll("header")[0].remove();
         createHeader();
-        console.log("reCreate");
         refreshWithDetectionWidth = $(window).width();
     }
 }, 2500);
