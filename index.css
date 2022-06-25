@@ -81,7 +81,7 @@
 .welPage_divider_father > div > img {
     height: 48px;
     float: left;
-    transform: translateY(1px);
+    transform: translateY(1px) rotateY(calc(180deg * var(--i)));
     image-rendering: pixelated;
 }
 

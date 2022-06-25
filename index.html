@@ -40,10 +40,6 @@
 
 <body>
     <header class="unCopy">
-        <div class="header_link">
-            <a class="header_title"></a>
-            <div id="header_completeLinks"></div>
-        </div>
         <div class="hamburg">
             <input type="checkbox" id="hamburg_checkbox" style="display: none" />
             <label for="hamburg_checkbox" class="hamburg_button">
@@ -53,84 +49,23 @@
                     <div></div>
                 </a>
             </label>
-            <div id="navMoreHref">
+            <div class="hamburg_links" id="navMoreHref">
                 <ul>
                     <li>
                         <a
                             href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ"
                             target="_blank">加入我们</a>
                     </li>
-                    <li class="navMoreNone">
-                        <a href="gallery">图&emsp;册</a>
+                    <li>
+                        <a href="gallery">图册</a>
                     </li>
-                    <li class="navMoreNone">
-                        <a href="document">文&emsp;档</a>
+                    <li>
+                        <a href="document">文档</a>
                     </li>
                 </ul>
             </div>
-            <!-- <a class="hader"></a> -->
-            <!-- <i>Genecraft</i> -->
-            <!-- <div class="w">
-            <div id="logo">
-                <a href="#">
-                    <img src="resources/GenecraftLogo.svg" />
-                </a>
-                <a href="#">
-                    <img src="resources/GenecraftTitle.svg" />
-                </a>
-            </div>
-            <div id="nav">
-                <ul id="navLeft">
-                    <li>
-                        <a href="#"><i
-                                class="fa-solid fa-house-chimney fa-xs fa-fw"></i>首页</a>
-                        <div class="blueLine"></div>
-                    </li>
-                    <li>
-                        <a href="gallery" class="sizeSmall"><i class="fas fa-images fa-fw fa-sm"></i>图册</a>
-                        <div class="blueLineNone"></div>
-                    </li>
-                    <li>
-                        <a href="document" class="sizeSmall"><i class="fas fa-bookmark fa-fw fa-xs"></i>文档</a>
-                        <div class="blueLineNone"></div>
-                    </li>
-                </ul>
-                <ul id="navRight">
-                    <li>
-                        <a
-                            href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ"
-                            target="_blank">
-                            <i class="fas fa-sign-in-alt fa-fw fa-xs"></i>加入我们</a>
-                        <div class="blueLine"></div>
-                    </li>
-                </ul>
-            </div>
-            <div id="navMore">
-                <input type="checkbox" id="navHref" style="display: none" />
-                <label for="navHref" id="navButton">
-                    <a href="#">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </a>
-                </label>
-                <div id="navMoreHref">
-                    <ul>
-                        <li>
-                            <a
-                                href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ"
-                                target="_blank">加入我们</a>
-                        </li>
-                        <li class="navMoreNone">
-                            <a href="gallery">图&emsp;册</a>
-                        </li>
-                        <li class="navMoreNone">
-                            <a href="document">文&emsp;档</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
+            <div id="getLengthTheTemporaryDiv"
+                style="width: 3.8em;height: 0;font-size: 20pt;pointer-events: none;opacity: 0;"></div>
     </header>
     <div class="page_welcome">
         <div class="blackCloth"></div>
@@ -138,7 +73,7 @@
             style="image-rendering: pixelated"
             width="920px"
             alt="Genesis Craft"
-            src="data:image/png;base64,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">
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAAoCAMAAABEgm29AAAAAXNSR0IArs4c6QAAAAZQTFRFAAAA////pdmf3QAAAAJ0Uk5TAP9bkSK1AAABNklEQVRIie2WSxKEIAxEk/tfespylO5Oq4C6M5uBfB4hQYaIRXKVZRDzki46UR6G79AX4Ii8B/frJYwfZyfMmjLRLingXsEjSclRUSK42ydGgIPSwJuTgatx37B6BMHx1MgiiTPIANjFIy08Kf4g1w2O2+ZkpDtYvJNCoBGiacdltK1pOmjhLjnNWBzrYfdlWU1UBrThzkznPJyvNrc3VmIZ5Sy1ImFHyGgdSwe0jrQxOMeaB9m5Z9gBrhiH1y+Q0iC1sD/5pF/gvPV4TqA7DmdLYozdlVX7jkbYbXzl2+NWs3kDrpcK/mWEv0j6r47qhuFEehIe5v9/jG3gRgeFweks3CvuNVThUoVbcA3WEk+dc3pa6LOqPh4G4QcPEFUMw8u9lXW5vyLldxAPs7LwJJzd00zm4D9LRgQvftwHLgAAAABJRU5ErkJggg">
         <div class="page_welcome_supplement" lang="en">
             THE<br />BLOCK<br />WORLD<br /><i
                 class="txtBig"

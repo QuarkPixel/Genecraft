@@ -60,10 +60,3 @@ var historyList = [
     "2021.5.10$服务器调试完毕$开始小范围试点",
     "2021.5.9$Genesis Craft 建立$聊天群创建",
 ];
-
-////Wallpaper
-var WallpaperList = [
-    "https://imgtu.ly2018.top/img/2022/03/220327_WjKvNOLi_C-211127_pPiNooVM.webp$荒芜星谷$https://b23.tv/WCcx9FZ$",
-    "resources/云顶森林.png$白鲨摄影机$https://b23.tv/D8MfxRW$可接单 QQ:3277644139",
-    "resources/菠萝森.png$白鲨摄影机$https://b23.tv/D8MfxRW$可接单 QQ:3277644139",
-];
