@@ -184,46 +184,24 @@ header::before {
     position: absolute;
     top: 8px;
     right: 0;
-    /* float: right; */
     width: 1px;
     height: 50px;
     background-color: var(--black2);
-    /* background-image: linear-gradient(
-        var(--black0),
-        var(--black2) 10%,
-        var(--black2) 90%,
-        var(--black0)
-    ); */
-    /* transition: cubic-bezier(0.74, 0, 0.46, 1) 0.4s; */
-    /* z-index: -1; */
 }
-
-/* .header_title:hover::after {
-    width: calc(100% - 0.2em);
-    margin-right: 0.2em;
-    border-radius: 6px;
-    background-color: #fff;
-} */
 
 .header_link > div {
     display: inline-block;
-    /* background-color: #fff; */
-    /* width: 447px; */
 }
 
 .header_link > div > a {
-    /* height: 66px; */
     width: 3.7em;
     margin: 19px 0.15em 0;
-    /* margin-top: 19px; */
     padding: 2px 0;
-    /* line-height: 66px; */
     text-align: center;
     font-family: opposans_B;
     font-size: 20pt;
     border-radius: 6px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
-    /* vertical-align: auto; */
 }
 
 .header_link > div > a:hover {
@@ -239,40 +217,16 @@ header::before {
     color: var(--mainColor);
 }
 
-/* .header_link > div > a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    margin: 13px 0 0 0.2em;
-    width: 3.4em;
-    height: 40px;
-    border-radius: 6px;
-    z-index: -1;
-    background: var(--mainColor0);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
-}
-
-.header_link > div > a:hover::after {
-    height: 40px;
-    background: #fff;
-    box-shadow: 0 0 18px var(--black2);
-} */
-
 .hamburg {
     position: absolute;
     top: 14px;
     right: 15px;
     padding-right: 2px;
-    /* height: 0; */
 }
 
 .hamburg_button {
     float: right;
-    /* margin: 10px; */
-    /* display: none; */
     cursor: pointer;
-    /* border-radius: 5px; */
 }
 
 .hamburg_button a {
@@ -348,7 +302,6 @@ header::before {
     display: block;
     border-radius: 8px;
     background-color: #ececec;
-    /* -webkit-backdrop-filter: blur(5vw); */
     box-shadow: 0 0 15px var(--black1);
     transform: scale(1);
 }
@@ -363,8 +316,6 @@ header::before {
     line-height: 20px;
     font-size: larger;
     text-align: center;
-    /* text-indent: 0.5em; */
-    /* letter-spacing: 0.5em; */
     color: var(--black0);
     transition: cubic-bezier(0.32, 0, 0.19, 1) 0.2s;
     pointer-events: none;
@@ -496,7 +447,6 @@ footer {
 
 @media (max-width: 423px) {
     .header_logo {
-        /* display: none; */
         width: 62px;
     }
 
@@ -512,108 +462,9 @@ footer {
 @media (max-width: 288px) {
     .header_logo {
         display: none;
-        /* width: 62px; */
     }
 
     header {
         background-image: none;
     }
 }
-
-/* @media (max-width: 790px) {
-    #logo {
-        margin-right: 10px;
-    }
-
-    #logo a {
-        margin-right: 0;
-    }
-
-    #logo a:nth-child(2) img {
-        display: none;
-    }
-}
-
-@media (max-width: 618px) {
-    #navRight {
-        display: none;
-    }
-
-    #navButton {
-        display: block;
-    }
-}
-
-@media (max-width: 540px) {
-    #nav li a i {
-        display: none;
-    }
-}
-
-@media (max-width: 440px) {
-    #navLeft li .sizeSmall {
-        transform: scale(0.7);
-        transform-origin: center bottom;
-        padding: 0 0;
-        margin: 0 -2px;
-    }
-}
-
-@media (max-width: 376px) {
-    #navLeft li .sizeSmall {
-        display: none;
-    }
-
-    .navMoreNone {
-        display: block;
-    }
-}
-
-@media (max-width: 300px) {
-    #navLeft {
-        display: none;
-    }
-}
-
-@media (max-width: 200px) {
-    #logo,
-    #cover div:last-child {
-        display: none;
-    }
-}
-
-@media (max-height: 331px) {
-    header {
-        background-color: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(0);
-        -webkit-backdrop-filter: blur(0);
-        box-shadow: none;
-    }
-
-    #navButton,
-    .navMoreNone {
-        display: block;
-    }
-
-    #navLeft,
-    #navRight,
-    #logo {
-        display: none;
-    }
-
-    #navButton a div {
-        background-color: var(--mainColor);
-        box-shadow: 0 0 5px var(--black3);
-    }
-
-    #hamburg_checkbox:checked ~ label a div {
-        box-shadow: 0 0 5px 2px var(--mainColor3);
-    }
-}
-
-@media (max-width: 119px) {
-    #navButton,
-    .hamburg_links {
-        display: none;
-    }
-} */

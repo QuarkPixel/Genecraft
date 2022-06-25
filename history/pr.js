@@ -1,17 +1,17 @@
-var prIndex = document.querySelector(".pr .wrap");
-reverseOrder = false;
-createBox();
+var prIndex = document.querySelector(".pr .wrap")
+reverseOrder = false
+createBox()
 if (window.name == "") {
-    $(prIndex).fadeIn("200");
-    window.name = "isReload";
+    $(prIndex).fadeIn("200")
+    window.name = "isReload"
 } else {
-    $(prIndex).show();
+    $(prIndex).show()
 }
 
 function createBox() {
     for (i = 0; i < historyList.length; i++) {
-        var listOne = historyList[order(i)].split("$");
-        var date = listOne[0].split(".");
+        var listOne = historyList[order(i)].split("$")
+        var date = listOne[0].split(".")
 
         $(prIndex).append(
             '<div class="event"><div class="time"><span><i class="year">' +
@@ -25,41 +25,41 @@ function createBox() {
                 "</p><p>" +
                 listOne[2] +
                 "</p></div></div></div>"
-        );
+        )
     }
 }
 
 function order(i) {
     if (reverseOrder) {
-        listOrder = i;
+        listOrder = i
     } else {
-        listOrder = historyList.length - i - 1;
+        listOrder = historyList.length - i - 1
     }
-    return listOrder;
+    return listOrder
 }
 
-var orderButton = document.getElementById("orderButton");
+var orderButton = document.getElementById("orderButton")
 
 orderButton.onclick = function () {
-    $(".order label").removeClass("playAnimation");
-    var checked = document.getElementById("orderButton");
-    $(".event").fadeOut("180");
+    $(".order label").removeClass("playAnimation")
+    var checked = document.getElementById("orderButton")
+    $(".event").fadeOut("180")
 
     function reloadList() {
-        $(prIndex).html("");
+        $(prIndex).html("")
         if (checked.checked) {
-            reverseOrder = true;
+            reverseOrder = true
         } else {
-            reverseOrder = false;
+            reverseOrder = false
         }
-        createBox();
+        createBox()
     }
-    setTimeout(reloadList, 280);
+    setTimeout(reloadList, 280)
 
     function displayList() {
-        $(".event").fadeIn("200");
+        $(".event").fadeIn("200")
     }
-    setTimeout(displayList, 100);
+    setTimeout(displayList, 100)
 
-    $(".order label").addClass("playAnimation");
-};
+    $(".order label").addClass("playAnimation")
+}

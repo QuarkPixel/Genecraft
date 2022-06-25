@@ -6,7 +6,7 @@ var announcementText = [
     "为网站作者加油！$今天，网站的作者QuarkPixel正在中考，为他加油打气！$220619-220621",
     "网站作者的生日！$今天是QuarkPixel的生日，去祝福他吧~$220919-220919",
     "图片投稿$官网重新装修，需要多张照片。大佬们可以投稿你们的建筑，或者好看的景观。截图即可，像素高清点。<br />上传至「群相册-景观收集」即可$-",
-];
+]
 
 ////SponsorList
 
@@ -19,7 +19,7 @@ var sponsorListII = [
     "sid_T$22.00",
     "QuarkPixel$33.09",
     "1uckily$62.80",
-];
+]
 
 var sponsorListI = [
     "zamonas$120.00",
@@ -33,7 +33,7 @@ var sponsorListI = [
     "zero_8_5$50.00",
     "uncle_hua$30.00",
     "kami$20.00",
-];
+]
 
 ////BannedList
 var bannedList = [
@@ -48,7 +48,7 @@ var bannedList = [
     "ljh$熊服$$2021.7.17$",
     "TWK_laochen$公然开挂$$2021.10.1$QQ:7254***85",
     "fan0619$熊服$矿透$2021.6.30$",
-];
+]
 
 ////HistoryEvent
 var historyList = [
@@ -59,4 +59,4 @@ var historyList = [
     "2021.5.27$服务器对外开放$欢迎所有人加入",
     "2021.5.10$服务器调试完毕$开始小范围试点",
     "2021.5.9$Genesis Craft 建立$聊天群创建",
-];
+]
