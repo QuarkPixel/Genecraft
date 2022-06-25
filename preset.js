@@ -18,14 +18,14 @@ function createHeader() {
     div_header = document.getElementsByTagName("header")
 
     $(div_header).prepend(
-        '<div class="header_link"><a class="header_logo" href="https://www.genecraft.top/"></a><a class="header_title" href="' +
-            allPages[currentPage][0] +
-            '"><i class="' +
+        '<div class="header_link"><a class="header_logo" href="https://www.genecraft.top/"></a><div class="header_title"' +
+            '><i class="' +
             allPages[currentPage][2] +
             '"></i>&thinsp;' +
             allPages[currentPage][1] +
-            '</a><div id="header_completeLinks"></div><div class="hamburg"><input type="checkbox" id="hamburg_checkbox" style="display: none" /><label for="hamburg_checkbox" class="hamburg_button"><a href="" title="更多链接"><div></div><div></div><div></div></a></label><div class="hamburg_links"></div></div></div>'
+            '</div><div id="header_completeLinks"></div><div class="hamburg"><input type="checkbox" id="hamburg_checkbox" style="display: none" /><label for="hamburg_checkbox" class="hamburg_button"><a href="" title="更多链接"><div></div><div></div><div></div></a></label><div class="hamburg_links"></div></div></div>'
     )
+    // href="' +allPages[currentPage][0] +
 
     getLengthTheTemporaryDiv = document.getElementById(
         "getLengthTheTemporaryDiv"

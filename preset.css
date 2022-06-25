@@ -163,11 +163,19 @@ header::before {
 .header_title {
     position: relative;
     height: 66px;
-    padding: 0 0.5em;
-    margin-right: 0.3em;
+    padding: 0 0.5em 0 0.3em;
+    margin: 0 0.3em 0 0.2em;
     font-family: opposans_B;
     font-size: 28pt;
     line-height: 66px;
+}
+
+.header_title i {
+    transition: cubic-bezier(0.74, 0, 0.46, 1) 0.4s;
+}
+
+.header_title:hover i {
+    color: var(--mainColor);
 }
 
 .header_title::after {
@@ -179,13 +187,23 @@ header::before {
     /* float: right; */
     width: 1px;
     height: 50px;
-    background: linear-gradient(
+    background-color: var(--black2);
+    /* background-image: linear-gradient(
         var(--black0),
         var(--black2) 10%,
         var(--black2) 90%,
         var(--black0)
-    );
+    ); */
+    /* transition: cubic-bezier(0.74, 0, 0.46, 1) 0.4s; */
+    /* z-index: -1; */
 }
+
+/* .header_title:hover::after {
+    width: calc(100% - 0.2em);
+    margin-right: 0.2em;
+    border-radius: 6px;
+    background-color: #fff;
+} */
 
 .header_link > div {
     display: inline-block;
