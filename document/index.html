@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 
+<script>
+    currentPage = 1;
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,71 +21,6 @@
 </head>
 
 <body>
-    <header class="unCopy">
-        <div class="w">
-            <div id="logo">
-                <a href="#">
-                    <img src="../resources/GenecraftLogo.svg">
-                </a>
-                <a href="..">
-                    <img src="../resources/GenecraftTitle.svg">
-                </a>
-            </div>
-            <div id="nav">
-                <ul id="navLeft">
-                    <li>
-                        <a href=".." class="sizeSmall"><i
-                                class="fa-solid fa-house-chimney fa-xs fa-fw"></i>首页</a>
-                        <div class="blueLineNone"></div>
-                    </li>
-                    <li>
-                        <a href="../gallery" class="sizeSmall">
-                            <i class="fas fa-images fa-fw fa-sm"></i>图册</a>
-                        <div class="blueLineNone"></div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-bookmark fa-fw fa-xs"></i>文档</a>
-                        <div class="blueLine"></div>
-                    </li>
-
-                </ul>
-                <ul id="navRight">
-                    <li>
-                        <a
-                            href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ"
-                            target="_blank">
-                            <i class="fas fa-sign-in-alt fa-fw fa-xs"></i>加入我们</a>
-                        <div class="blueLine"></div>
-                    </li>
-                </ul>
-            </div>
-            <div id="navMore">
-                <input type="checkbox" id="navHref" style="display: none;">
-                <label for="navHref" id="navButton">
-                    <a href="#">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </a>
-                </label>
-                <div id="navMoreHref">
-                    <ul>
-                        <li>
-                            <a href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ" target="_blank">
-                                加入我们</a>
-                        </li>
-                        <li class="navMoreNone">
-                            <a href="..">首&emsp;页</a>
-                        </li>
-                        <li class="navMoreNone">
-                            <a href="../gallery">图&emsp;册</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
     <div id="main">
         <aside>
             <i>&thinsp;目&ensp;录</i>
@@ -216,18 +155,7 @@
             </div>
         </main>
     </div>
-    <footer>
-        <div class="info">
-            <div>
-                &copy;&nbsp;2022
-                <a href="https://www.genecraft.top">
-                    Genesis&nbsp;Craft&nbsp;方块世界</a>
-                &nbsp;保留所有权利
-            </div>
-            <a href="https://beian.miit.gov.cn"
-                target="_blank">浙ICP备18045561号-3</a>
-        </div>
-    </footer>
+    <script src="../preset.js"></script>
     <script src="doc.js"></script>
 </body>
 
