@@ -39,8 +39,6 @@ function createHeader() {
         allPages_serial_maxNumber = allPages.length - 1;
     }
 
-    console.log(allPages_serial_maxNumber);
-
     var allPages_serial_number = 0;
 
     for (let i = 0; i < allPages_serial_maxNumber; i++) {
@@ -54,8 +52,6 @@ function createHeader() {
                     allPages[i][1] +
                     "</a>"
             );
-            console.log(i + "|" + allPages_serial_maxNumber);
-            // } else if (allPages_serial_maxNumber != allPages.length - 1) {
         } else {
             allPages_serial_maxNumber++;
         }
@@ -69,8 +65,6 @@ function createHeader() {
         1;
 
     allPages_serial_number++;
-
-    console.log("dd: " + hamburg_maxLinks + "|" + allPages_serial_number);
 
     if (hamburg_maxLinks > allPages_serial_number) {
         for (let i = allPages_serial_number; i < hamburg_maxLinks; i++) {
@@ -87,12 +81,21 @@ function createHeader() {
             }
         }
     } else {
-        console.log("delete");
         document.querySelectorAll(".hamburg")[0].remove();
     }
 }
 
 createHeader();
+
+var refreshWithDetectionWidth = $(window).width();
+setInterval(function () {
+    if ($(window).width() != refreshWithDetectionWidth) {
+        document.querySelectorAll("header")[0].remove();
+        createHeader();
+        console.log("reCreate");
+        refreshWithDetectionWidth = $(window).width();
+    }
+}, 2500);
 
 ////Footer Wallpaper
 var WallpaperList = [
