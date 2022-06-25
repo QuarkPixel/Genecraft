@@ -58,10 +58,22 @@ function createHeader() {
             allPages_serial_maxNumber++
         }
         allPages_serial_number = i
+        console.log("a" + allPages_serial_number)
     }
 
+    console.log(allPages_serial_number)
+
     var hamburg_maxLinks =
-        allPages_serial_number + allPages.length - allPages_serial_maxNumber
+        allPages_serial_number + allPages.length - allPages_serial_maxNumber + 1
+
+    if (hamburg_maxLinks > allPages.length) {
+        hamburg_maxLinks = allPages.length
+    }
+
+    console.log(hamburg_maxLinks + "|" + allPages_serial_number)
+    if (allPages_serial_number != 0) {
+        allPages_serial_number++
+    }
 
     if (hamburg_maxLinks > allPages_serial_number) {
         for (let i = allPages_serial_number; i < hamburg_maxLinks; i++) {
@@ -76,6 +88,7 @@ function createHeader() {
                         "</a>"
                 )
             }
+            console.log(i)
         }
     } else {
         document.querySelectorAll(".hamburg")[0].remove() //移除汉堡图标
