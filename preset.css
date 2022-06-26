@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: opposans;
     src: url(resources/type/oppo_M.woff);
     font-display: swap;
@@ -14,7 +14,7 @@
     font-family: opposans_L;
     src: url(resources/type/oppo_L.woff);
     font-display: swap;
-}
+} */
 
 :root {
     --mainColor: rgba(39, 128, 194, 1);
@@ -54,8 +54,8 @@
 body {
     color: var(--black);
     background-color: #ccc;
-    font-family: opposans, PingFang SC, Microsoft YaHei, "微软雅黑", Arial,
-        Helvetica, sans-serif;
+    font-family: PingFang SC, Microsoft YaHei, "微软雅黑", Arial, Helvetica,
+        sans-serif;
     font-size: 12pt;
 }
 
@@ -150,7 +150,7 @@ header::before {
     height: 66px;
     width: 182px;
     text-align: end;
-    font-family: opposans_B;
+    font-weight: bold;
     letter-spacing: 0.3em;
     text-indent: -20px;
     font-size: 28pt;
@@ -165,7 +165,7 @@ header::before {
     height: 66px;
     padding: 0 0.5em 0 0.3em;
     margin: 0 0.3em 0 0.2em;
-    font-family: opposans_B;
+    font-weight: bold;
     font-size: 28pt;
     line-height: 66px;
 }
@@ -198,7 +198,7 @@ header::before {
     margin: 19px 0.15em 0;
     padding: 2px 0;
     text-align: center;
-    font-family: opposans_B;
+    font-weight: bold;
     font-size: 20pt;
     border-radius: 6px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
