@@ -2,11 +2,11 @@ var versionNumber = "1.3.2"
 
 var allPages = [
     ["../", "首页", "fa-solid fa-house-chimney fa-xs fa-fw"],
-    ["../document", "文档", "fas fa-bookmark fa-fw fa-xs"],
+    ["../document", "文档", "fa-solid fa-book-bookmark fa-fw fa-xs"],
     ["../gallery", "图册", "fas fa-images fa-fw fa-sm"],
-    ["../history", "历史", "fa-solid fa-clock-rotate-left fa-fw fa-sm"],
+    ["../history", "历史", "fa-solid fa-clock-rotate-left fa-fw fa-xs"],
     ["../sponsorlist", "赞助", "fas fa-dollar-sign fa-sm"],
-    ["../bannedlist", "封禁", "fas fa-book-dead fa-xs fa-fw"],
+    ["../bannedlist", "封禁", "fa-solid fa-ban fa-xs fa-fw"],
 ]
 
 function createHeader() {
@@ -58,10 +58,7 @@ function createHeader() {
             allPages_serial_maxNumber++
         }
         allPages_serial_number = i
-        console.log("a" + allPages_serial_number)
     }
-
-    console.log(allPages_serial_number)
 
     var hamburg_maxLinks =
         allPages_serial_number + allPages.length - allPages_serial_maxNumber + 1
@@ -70,7 +67,6 @@ function createHeader() {
         hamburg_maxLinks = allPages.length
     }
 
-    console.log(hamburg_maxLinks + "|" + allPages_serial_number)
     if (allPages_serial_number != 0) {
         allPages_serial_number++
     }
@@ -88,7 +84,6 @@ function createHeader() {
                         "</a>"
                 )
             }
-            console.log(i)
         }
     } else {
         document.querySelectorAll(".hamburg")[0].remove() //移除汉堡图标
