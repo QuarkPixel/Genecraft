@@ -1,3 +1,22 @@
+//载入动画
+const boxList = document.querySelectorAll(".box")
+
+scrollLoad() // 初始进入执行一次
+
+var triggerBottom = window.innerHeight * 0.8 // 触发的条件 , 整体高度的 80%
+
+window.addEventListener("scroll", scrollLoad) // 滚动执行
+
+function scrollLoad() {
+    boxList.forEach((box) => {
+        const boxTop = box.getBoundingClientRect().top // 当前盒子距离顶部的Top
+
+        if (boxTop <= triggerBottom) {
+            box.classList.add("box_show")
+        }
+    })
+}
+
 //Cover;
 if (window.name == "") {
     $(".blackCloth").css("background-color", "var(--black10)")
@@ -14,11 +33,14 @@ if (window.name == "") {
 //Create many dividers
 for (let i = 0; i < Math.ceil(window.innerWidth / 480); i++) {
     $(".welPage_divider_father > div").append(
-        '<img style="--i: ' +
-            Math.round(Math.random()) +
-            '" src="https://imgtu.ly2018.top/img/2022/06/220620_fAgJfuvd_divider.png">'
+        '<img src="https://imgtu.ly2018.top/img/2022/06/220620_fAgJfuvd_divider.png">'
     )
 }
+
+//time_establishment
+document.getElementById("time_establishment").innerHTML = parseInt(
+    (new Date().getTime() - new Date("2019-01-04").getTime()) / 86400000
+)
 
 //Announcement
 dateNow = parseInt(
@@ -216,9 +238,9 @@ $(document).ready(function () {
     })
 })
 
-var refreshWithDetectionWidth = $(window).width()
-setInterval(function () {
-    if ($(window).width() != refreshWithDetectionWidth) {
-        location.reload()
-    }
-}, 5000)
+// var refreshWithDetectionWidth = $(window).width()
+// setInterval(function () {
+//     if ($(window).width() != refreshWithDetectionWidth) {
+//         location.reload()
+//     }
+// }, 5000)
