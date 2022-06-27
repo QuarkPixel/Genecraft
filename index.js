@@ -1,9 +1,9 @@
 //载入动画
 const boxList = document.querySelectorAll(".box")
 
-scrollLoad() // 初始进入执行一次
-
 var triggerBottom = window.innerHeight * 0.8 // 触发的条件 , 整体高度的 80%
+
+scrollLoad() // 初始进入执行一次
 
 window.addEventListener("scroll", scrollLoad) // 滚动执行
 
