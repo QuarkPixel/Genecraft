@@ -154,22 +154,27 @@ aside ul li:hover {
             no-repeat,
         linear-gradient(to left, var(--mainColor), var(--mainColor)) right
             bottom no-repeat;
+    /* background-size: 16px 1px, 16px 2px, 2px 16px, 16px 2px; */
     background-size: 2px 16px, 16px 2px, 2px 16px, 16px 2px;
 }
 
 .item::after {
-    content: "";
+    content: "Genesis Craft";
     position: relative;
     display: block;
-    width: 32px;
-    height: 32px;
-    background: url("../resources/GenecraftLogo.svg");
-    filter: grayscale(80%);
-    background-size: cover;
+    width: 130px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    text-indent: 25px;
+    background: no-repeat
+        url("https://imgtu.ly2018.top/img/2022/03/220320_rcDYS2ct_Alpha.png");
+    /* filter: grayscale(80%); */
+    background-size: contain;
     float: right;
-    bottom: 45px;
-    right: -20px;
-    opacity: 0.2;
+    bottom: 46px;
+    /* right: -20px; */
+    opacity: 0.3;
 }
 
 .placeholder {
@@ -241,12 +246,15 @@ aside ul li:hover {
 
 .jflc .download li {
     margin: 20px 10px;
-    padding: 5px 25px;
     border-radius: 12px;
     line-height: 36px;
     background-color: #fff;
     box-shadow: 0 0 25px 2px var(--black1);
     font-size: x-large;
+}
+
+.download a {
+    padding: 8px 15px;
 }
 
 .yxgz {
@@ -259,9 +267,20 @@ aside ul li:hover {
     font-size: 20pt;
 }
 
-.yxgz p {
+.explain {
     text-indent: 2em;
     margin-top: 0px;
+    font-weight: bold;
+}
+
+.punishment {
+    text-indent: 2em;
+    font-style: italic;
+}
+
+.punishment::before {
+    content: "惩罚：";
+    font-style: normal;
 }
 
 .jbzl {

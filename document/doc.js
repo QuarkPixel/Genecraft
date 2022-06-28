@@ -43,3 +43,7 @@ backBottle.onclick = function () {
         content.className = "content"
     }
 }
+
+function aa() {
+    console.log("aaaa")
+}
