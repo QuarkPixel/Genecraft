@@ -154,7 +154,6 @@ aside ul li:hover {
             no-repeat,
         linear-gradient(to left, var(--mainColor), var(--mainColor)) right
             bottom no-repeat;
-    /* background-size: 16px 1px, 16px 2px, 2px 16px, 16px 2px; */
     background-size: 2px 16px, 16px 2px, 2px 16px, 16px 2px;
 }
 
@@ -169,11 +168,9 @@ aside ul li:hover {
     text-indent: 25px;
     background: no-repeat
         url("https://imgtu.ly2018.top/img/2022/03/220320_rcDYS2ct_Alpha.png");
-    /* filter: grayscale(80%); */
     background-size: contain;
     float: right;
     bottom: 46px;
-    /* right: -20px; */
     opacity: 0.3;
 }
 

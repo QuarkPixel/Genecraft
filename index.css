@@ -15,7 +15,6 @@
 .box {
     transform: translateX(-50%);
     opacity: 0;
-    /* transition: transform ease-ou 1s, opacity ease-out 1s; */
     transition: transform cubic-bezier(0, 0.8, 0, 1) 1s, opacity ease-out 1s;
 }
 
@@ -187,7 +186,6 @@
     font-size: min(15vw, 50pt);
     width: 90vw;
     padding: 0 5vw;
-    /* margin-left: -5vw; */
     position: relative;
     overflow: hidden;
 }
@@ -216,17 +214,12 @@
 }
 
 .wordsExplain {
-    /* float: left; */
     display: block;
     margin: -15px 0 10px min(1vw, 10px);
     height: 20px;
     color: #777;
-    /* font-size: medium; */
-    /* position: absolute; */
-    /* text-indent: min(1vw, 10px); */
     font-size: small;
     line-height: 1em;
-    /* color: #777; */
     transform: translatey(-5em);
     transition: transform cubic-bezier(0, 0.8, 0, 1) 1s 1s,
         opacity ease-out 1s 1s !important;
@@ -246,7 +239,6 @@
 
 .wordsExplain i {
     font-weight: bold;
-    /* font-size: medium; */
 }
 
 .propaganda > div:nth-child(2) {
@@ -278,13 +270,10 @@
 
 .propaganda > div:nth-child(6) {
     position: relative;
-    /* perspective: 800px; */
 }
 
 .propaganda > div:nth-child(6)::after {
-    /* font-size: min(10vw, 35pt); */
     content: "Ryzen 9\00000a5900X";
-    /* content:"" */
     display: block;
     position: absolute;
     top: 3em;
@@ -298,11 +287,9 @@
     text-align: center;
     line-height: 34px;
     border-radius: 6px;
-    /* outline: 10px dashed #aeaeae; */
     background-color: #aeaeae;
     z-index: -1;
     transform: rotate(20deg);
-    /* rotate3d(30deg, 20deg, 194deg); */
 }
 
 @media (max-width: 590px) {
@@ -331,11 +318,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* align-content: flex-start; */
     flex-wrap: wrap;
-    /* position: relative; */
     width: 80vw;
-    /* height: 5em; */
     margin: 1em auto;
     font-size: min(7vw, 40pt);
 }
@@ -353,13 +337,11 @@
 
 .entrance_QrCode img {
     width: 100%;
-    /* height: 100%; */
     margin-bottom: 5px;
     image-rendering: pixelated;
 }
 
 .entrance_QrCode div {
-    /* margin-top: -1em; */
     font-size: small;
     text-align: center;
     color: #999;
@@ -375,7 +357,6 @@
     border: 4px solid var(--mainColor);
     width: 250px;
     color: var(--mainColor);
-    /* border-radius: 16px; */
     font-size: smaller;
     text-align: center;
     transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
@@ -445,7 +426,6 @@
 }
 
 .AD {
-    /* width: 100%; */
     margin-top: 80px;
     padding: 2vw 0;
 }
@@ -549,16 +529,7 @@
     padding-right: 0.1em;
     border: #e5e5e5 solid 10px;
     border-width: 10px 3px;
-    /* width: 48vw; */
     border-radius: 5px;
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
-    /* display: -moz-box; */
-    /* -moz-line-clamp: 1; */
-    /* -moz-box-orient: vertical; */
-    /* display: -webkit-box; */
-    /* -webkit-box-orient: vertical; */
-    /* -webkit-line-clamp: 6; */
 }
 
 #announcement-title {
@@ -574,7 +545,6 @@
 }
 
 #announcement-body::-webkit-scrollbar {
-    /* height: 10px; */
     width: 6px;
 }
 
@@ -622,7 +592,6 @@
 
 .btn_href {
     margin: 60px auto;
-    /* padding: 0 1em; */
     border: var(--mainColor) solid 2px;
     text-align: center;
     line-height: 1.5em;
