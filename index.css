@@ -204,23 +204,21 @@
 
 .slogan {
     display: block;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     font-size: min(8vw, 50pt);
     font-weight: bold;
     color: #2780c2;
-
     text-shadow: 0.05em 0.05em var(--black2);
     line-height: 50pt;
 }
 
 .wordsExplain {
     display: block;
-    margin: -15px 0 10px min(1vw, 10px);
+    margin: 0 0 20px min(1vw, 10px);
     height: 20px;
     color: #777;
     font-size: small;
     line-height: 1em;
-    transform: translatey(-5em);
     transition: transform cubic-bezier(0, 0.8, 0, 1) 1s 1s,
         opacity ease-out 1s 1s !important;
 }
