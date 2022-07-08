@@ -1,0 +1,5 @@
+node_modules
+dist
+.vscode
+deploy.sh
+.DS_Store
