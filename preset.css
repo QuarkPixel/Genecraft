@@ -24,11 +24,18 @@
     width: 0;
 }
 
+@font-face {
+    font-family: Emoji;
+    src: local("Apple Color Emojiji"), local("Segoe UI Emoji"),
+        local("Segoe UI Symbol"), local("Noto Color Emoji");
+    unicode-range: U+1F000-1F644, U+203C-3299;
+}
+
 body {
     color: var(--black);
     background-color: #ccc;
-    font-family: PingFang SC, Microsoft YaHei, "微软雅黑", Arial, Helvetica,
-        sans-serif;
+    font-family: system-ui, —apple-system, Segoe UI, Rototo, Emoji, Helvetica,
+        Arial, sans-serif;
     font-size: 12pt;
 }
 
