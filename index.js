@@ -209,8 +209,47 @@ window.onload = function () {
         }
     }
 }
+function hidden_entrance() {
+    console.log("hidden")
+    $("#entrance_member").fadeOut()
+}
 
 //Loadover
+//member_number
+
+$.ajax({
+    type: "get",
+    url: "https://eu.mc-api.net/v3/server/ping/game.genecraft.top:21945",
+    dataType: "json",
+    success: function (entrance_member_number) {
+        entrance_member_number.players.now != 0
+            ? $("#entrance_member_number").after(
+                  entrance_member_number.players.now
+              )
+            : hidden_entrance()
+    },
+    error: function () {
+        console.log("1")
+        console.log("Error")
+        $.ajax({
+            type: "get",
+            url: "http://mcapi.us/server/status?ip=game.genecraft.top&port=21945",
+            dataType: "json",
+            success: function (entrance_member_number) {
+                entrance_member_number.players.now != 0
+                    ? $("#entrance_member_number").after(
+                          entrance_member_number.players.now
+                      )
+                    : hidden_entrance()
+            },
+            error: function () {
+                hidden_entrance()
+                console.log("2")
+            },
+        })
+    },
+})
+
 $(document).ready(function () {
     $(".iframeVideo").slick({
         accessibility: false,
