@@ -34,7 +34,7 @@
         no-repeat fixed;
     background-size: 100vw auto;
     background-color: #000;
-    margin-bottom: 48px;
+    margin-bottom: 1em;
     position: relative;
 }
 
@@ -204,6 +204,7 @@
 
 .slogan {
     display: block;
+    margin-bottom: 0.2em;
     font-size: min(8vw, 50pt);
     font-weight: bold;
     color: #2780c2;
@@ -302,7 +303,8 @@
 }
 
 .entrance > div:nth-child(1),
-.entrance > div:nth-child(2) {
+.entrance > div:nth-child(2),
+.entrance > div:nth-child(3) {
     text-align: center;
     font-size: min(7vw, 40pt);
     font-weight: 700;
@@ -312,6 +314,12 @@
 }
 
 .entrance > div:nth-child(3) {
+    font-size: 12pt;
+    /* opacity: 0.6; */
+    color: #7e7e7e;
+}
+
+.entrance > div:nth-child(4) {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -539,6 +547,7 @@
 #announcement-body {
     overflow: auto;
     height: calc(13.5vw - 30px);
+    min-height: 80px;
 }
 
 #announcement-body::-webkit-scrollbar {
@@ -587,29 +596,10 @@
     }
 }
 
-.btn_href {
-    margin: 60px auto;
-    border: var(--mainColor) solid 2px;
-    text-align: center;
-    line-height: 1.5em;
-    font-size: xx-large;
-    font-weight: 500;
-    color: var(--mainColor);
-    border-radius: 18px;
-    text-shadow: 0 0 25px var(--mainColor3);
-    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
-}
-
-.btn_href:hover {
-    font-weight: 800;
-    background-color: var(--mainColor);
-    color: #ececec;
-    transform: scale(1.1);
-}
-
 .sponsorList {
-    width: calc(90vw - 10px);
-    margin-top: 50px;
+    width: 256px;
+    margin: 50px 0 13px calc(95vw - 266px);
+    /* float: right; */
     padding: 12px 5px 24px;
     border-radius: 12px;
     box-shadow: var(--shadow_large);
@@ -645,6 +635,32 @@
 
 .sLMoney {
     text-align: left;
+}
+
+.btn_href {
+    margin: 20px 0;
+    border: var(--mainColor) solid 2px;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: xx-large;
+    font-weight: 500;
+    color: var(--mainColor);
+    border-radius: 18px;
+    text-shadow: 0 0 25px var(--mainColor3);
+    transition: cubic-bezier(0.5, 0, 0, 1) 0.4s;
+}
+
+.btn_href:hover {
+    font-weight: 800;
+    background-color: var(--mainColor);
+    color: #ececec;
+    transform: scale(1.1);
+}
+
+.donate {
+    width: 266px;
+    margin: 20px 0 64px calc(95vw - 266px);
+    /* float: right; */
 }
 
 .previewPicture {
