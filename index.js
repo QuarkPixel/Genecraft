@@ -17,6 +17,32 @@ function scrollLoad() {
     })
 }
 
+//canny
+// !(function (w, d, i, s) {
+//     function l() {
+//         if (!d.getElementById(i)) {
+//             var f = d.getElementsByTagName(s)[0],
+//                 e = d.createElement(s)
+//             ;(e.type = "text/javascript"),
+//                 (e.async = !0),
+//                 (e.src = "https://canny.io/sdk.js"),
+//                 f.parentNode.insertBefore(e, f)
+//         }
+//     }
+//     if ("function" != typeof w.Canny) {
+//         var c = function () {
+//             c.q.push(arguments)
+//         }
+//         ;(c.q = []),
+//             (w.Canny = c),
+//             "complete" === d.readyState
+//                 ? l()
+//                 : w.attachEvent
+//                 ? w.attachEvent("onload", l)
+//                 : w.addEventListener("load", l, !1)
+//     }
+// })(window, document, "canny-jssdk", "script")
+
 //Cover;
 if (window.name == "") {
     $(".blackCloth").css("background-color", "var(--black10)")
@@ -210,7 +236,6 @@ window.onload = function () {
     }
 }
 function hidden_entrance() {
-    console.log("hidden")
     $("#entrance_member").fadeOut()
 }
 
@@ -229,8 +254,6 @@ $.ajax({
             : hidden_entrance()
     },
     error: function () {
-        console.log("1")
-        console.log("Error")
         $.ajax({
             type: "get",
             url: "http://mcapi.us/server/status?ip=game.genecraft.top&port=21945",
@@ -277,9 +300,9 @@ $(document).ready(function () {
     })
 })
 
-var refreshWithDetectionWidth = $(window).width()
-setInterval(function () {
-    if ($(window).width() != refreshWithDetectionWidth) {
-        location.reload()
-    }
-}, 5000)
+// var refreshWithDetectionWidth = $(window).width()
+// setInterval(function () {
+//     if ($(window).width() != refreshWithDetectionWidth) {
+//         location.reload()
+//     }
+// }, 5000)
