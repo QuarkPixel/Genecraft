@@ -201,6 +201,8 @@ header::before {
     position: absolute;
     top: 14px;
     right: 15px;
+    width: 30px;
+    height: 38px;
     padding-right: 2px;
 }
 
@@ -269,7 +271,8 @@ header::before {
 }
 
 .hamburg_links {
-    margin: 65px 4px 0 0;
+    width: 85px;
+    margin: 65px 0 0 -50px;
     padding: 10px 8px;
     border-radius: 64px;
     box-shadow: 0 0 15px var(--black0);
