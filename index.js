@@ -57,11 +57,14 @@ if (window.name == "") {
 }
 
 //Create many dividers
-for (let i = 0; i < Math.ceil(window.innerWidth / 480); i++) {
+const numOfDividers = Math.ceil(window.innerWidth / 480)
+for (let i = 0; i < numOfDividers; i++) {
     $(".welPage_divider_father > div").append(
         '<img src="https://imgtu.ly2018.top/img/2022/06/220620_fAgJfuvd_divider.png">'
     )
 }
+document.querySelector(".welPage_divider_father > div").style.width =
+    numOfDividers * 480 + 1 + "px"
 
 //time_establishment
 document.getElementById("time_establishment").innerHTML = parseInt(
