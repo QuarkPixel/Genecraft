@@ -67,6 +67,13 @@ i {
     font-style: normal;
 }
 
+code {
+    background-color: var(--black1);
+    padding: 0 0.3em;
+    border-radius: 2px;
+    margin: auto 0.3em;
+}
+
 .w {
     width: 90vw;
     margin-left: 5vw;
