@@ -37,7 +37,10 @@ var sponsorListI = [
 ]
 
 ////BannedList
+//2022.9.28－WarEnder qq1355059459 放了400页TNT熊服
 var bannedList = [
+    "WarEnder$放置大量TNT：使用<code>/co i</code>指令共可以查到 400 多页的放置记录$$2021.11.17$QQ:1355059459",
+    "haiao$公然开挂$$2022.8.11$",
     "TameableEmu1974$使用TNT破坏出生点装饰$反复退群 干扰管理秩序$2021.11.17$",
     "Xx_wsx666_xX$多次使用作弊$破坏玩家机器$2021.11.14$QQ:17204***64",
     "LoveMin$大量白嫖 抄家$$2021.10.16$",
