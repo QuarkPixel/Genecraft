@@ -29,7 +29,7 @@ function createHeader() {
 			<div id="header_completeLinks">
 			</div>
 			<div class="hamburg">
-				<input type="checkbox" id="hamburg_checkbox" style="display: none" />
+				<input type="checkbox" id="hamburg_checkbox" style="display: none" checked="checked" />
 				<label for="hamburg_checkbox" class="hamburg_button">
 				<a href="" title="更多链接">
 					<div></div>
@@ -50,11 +50,13 @@ function createHeader() {
 			$(getLengthTheTemporaryDiv)[0].getBoundingClientRect().width.toFixed(3),
 	)
 
+	if (allPages_serial_maxNumber < 0) allPages_serial_maxNumber = 0
+
 	if (allPages.length - 1 < allPages_serial_maxNumber)
 		allPages_serial_maxNumber = allPages.length - 1
 	//实际可放的元素数比最大元素数少
 
-	let allPages_serial_number //序号
+	let allPages_serial_number = 0 //序号
 	//可以放得下的元素
 	for (let i = 0; i < allPages_serial_maxNumber; i++) {
 		if (i != currentPage) {
@@ -72,13 +74,21 @@ function createHeader() {
 
 	let hamburg_maxLinks =
 		allPages.length - allPages_serial_maxNumber + allPages_serial_number
+	if (allPages.length - 1 < hamburg_maxLinks)
+		hamburg_maxLinks = allPages.length - 1
+	//实际可放的元素数比最大元素数少
 
-	allPages_serial_number++
-	if (hamburg_maxLinks != allPages.length - 1) hamburg_maxLinks++ //换到下一个元素，避免汉堡图标内与header部分元素重复
+	if (allPages_serial_maxNumber != 0) {
+		allPages_serial_number++
+		// debugger
+		hamburg_maxLinks++
+		if (hamburg_maxLinks >= allPages.length)
+			hamburg_maxLinks = allPages.length - 1
+	} //换到下一个元素，避免汉堡图标内与header部分元素重复
 
-	if (hamburg_maxLinks > allPages_serial_number) {
+	if (hamburg_maxLinks >= allPages_serial_number) {
 		//检测是否需要添加汉堡
-		for (let i = allPages_serial_number; i < hamburg_maxLinks; i++) {
+		for (let i = allPages_serial_number; i <= hamburg_maxLinks; i++) {
 			if (i != currentPage) {
 				//排除当前页面
 				//汉堡元素内存放的元素
@@ -89,6 +99,8 @@ function createHeader() {
 					`)
 			} else {
 				hamburg_maxLinks++
+				if (hamburg_maxLinks >= allPages.length)
+					hamburg_maxLinks = allPages.length - 1
 			}
 		}
 	} else {
