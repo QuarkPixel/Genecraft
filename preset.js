@@ -73,7 +73,7 @@ function createHeader() {
 
 	let hamburg_maxLinks =
 		allPages.length - allPages_serial_maxNumber + allPages_serial_number
-	allPages_serial_number++ //换到下一个元素，避免汉堡图标内与header部分元素重复
+	allPages_serial_number++, hamburg_maxLinks++ //换到下一个元素，避免汉堡图标内与header部分元素重复
 	if (hamburg_maxLinks > allPages_serial_number) {
 		//检测是否需要添加汉堡
 		for (let i = allPages_serial_number; i < hamburg_maxLinks; i++) {
